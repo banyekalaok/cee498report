@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/91865a2d9f1d3d0b77ff63ea6bc8407f206cf11f/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/96aeeccf8eef12e744716c9aa43351c7ce594902/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/91865a2d9f1d3d0b77ff63ea6bc8407f206cf11f/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/96aeeccf8eef12e744716c9aa43351c7ce594902/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/91865a2d9f1d3d0b77ff63ea6bc8407f206cf11f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/96aeeccf8eef12e744716c9aa43351c7ce594902/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/91865a2d9f1d3d0b77ff63ea6bc8407f206cf11f/))
+([permalink](https://banyekalaok.github.io/cee498report/v/96aeeccf8eef12e744716c9aa43351c7ce594902/))
 was automatically generated
-from [banyekalaok/cee498report@91865a2](https://github.com/banyekalaok/cee498report/tree/91865a2d9f1d3d0b77ff63ea6bc8407f206cf11f)
+from [banyekalaok/cee498report@96aeecc](https://github.com/banyekalaok/cee498report/tree/96aeeccf8eef12e744716c9aa43351c7ce594902)
 on December 5, 2020.
 </em></small>
 
@@ -120,12 +120,6 @@ on December 5, 2020.
 # Chapter 1. Introduction
 
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
-
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://github.com/banyekalaok/cs411/blob/master/crm5/static/images/logo.png "Square image"){#fig:square-image}
-
 
 ## Project Group 7's Objective 
 
