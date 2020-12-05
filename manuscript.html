@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/518a09fffe8fc9ef143f27bf6657f72ec0404982">banyekalaok/cee498report@518a09f</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915">banyekalaok/cee498report@ac413d0</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -82,22 +82,23 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
 <p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.</p>
-<p>
-<img src="images/Figure1.png" alt="foo1" title="title" />
-</p>
-<div id="fig:square-image" class="fignos">
+<div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
-Loaded from the latest version of image on GitHub.</figcaption>
+<img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
 </figure>
 </div>
-<h2 id="project-group-7s-objective">Project Group 7’s Objective</h2>
+<h2 id="background">1.1 Background</h2>
+<p>Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
+If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CU-MTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
+<h2 id="dataset-overview">1.2 Dataset Overview</h2>
+<p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.</p>
+<h2 id="project-objective">1.3 Project Objective</h2>
 <p>Group 7’s project objective is to use the bus data to predict the buses load averages (average number of passengers onboard during a trip). This project is of particular interest to CU-MTD because in 2020, the bus load averages have significantly decreased due to the COVID-19 pandemic. Therefore, any results or conclusions that help CU-MTD better predict the load averages could increase their operating efficiencies and minimize costs.</p>
-<h2 id="full-report-structure">Full Report Structure</h2>
+<h2 id="full-report-structure">1.4 Full Report Structure</h2>
 <p>The report was developed using Manubot to allow for a collaborative effort among the 6 group members. The explaratory data analysis (EDA) and model were developed using Python 3 in a Kaggle Notebook and Jupyter integrated development environment (IDE). The content in the following report is broken down into the following 4 main chapters:</p>
 <ol type="1">
 <li><strong>Introduction</strong> - The current chapter which introduces the project scope and objective.</li>
-<li>** Explaratory Data Analysis** - This chapter details the EDA process, findings and key takeaways.</li>
+<li><strong>Explaratory Data Analysis</strong> - This chapter details the EDA process, findings and key takeaways.</li>
 <li><strong>Model Development</strong> - This section describes the step-by-step methodology used to determine the best model to predict the load averages.</li>
 <li><strong>Conclusions</strong> - This section briefly highlights the key takeaways from the model development efforts and the report in general.</li>
 </ol>

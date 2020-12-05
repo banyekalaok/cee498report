@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/))
+([permalink](https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/))
 was automatically generated
-from [banyekalaok/cee498report@518a09f](https://github.com/banyekalaok/cee498report/tree/518a09fffe8fc9ef143f27bf6657f72ec0404982)
+from [banyekalaok/cee498report@ac413d0](https://github.com/banyekalaok/cee498report/tree/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915)
 on December 5, 2020.
 </em></small>
 
@@ -121,23 +121,25 @@ on December 5, 2020.
 
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
 
-<p><img src="images/Figure1.png" alt="foo1" title="title" /></p>
-
 ![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](images/Figure1.png "foo2"){#fig:square-image}
+**CUMTD Route Map**
+](images/Figure1.png "CUMTD Route Map"){#fig:wide-image}
 
-## Project Group 7's Objective 
+## 1.1 Background
+Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
+If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CU-MTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip). 
 
+## 1.2 Dataset Overview
+We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.
+
+## 1.3 Project Objective 
 Group 7's project objective is to use the bus data to predict the buses load averages (average number of passengers onboard during a trip). This project is of particular interest to CU-MTD because in 2020, the bus load averages have significantly decreased due to the COVID-19 pandemic. Therefore, any results or conclusions that help CU-MTD better predict the load averages could increase their operating efficiencies and minimize costs.
 
-## Full Report Structure
-
+## 1.4 Full Report Structure
 The report was developed using Manubot to allow for a collaborative effort among the 6 group members. The explaratory data analysis (EDA) and model were developed using Python 3 in a Kaggle Notebook and Jupyter integrated development environment (IDE). The content in the following report is broken down into the following 4 main chapters:
 
 1. **Introduction** - The current chapter which introduces the project scope and objective.
-2. ** Explaratory Data Analysis** - This chapter details the EDA process, findings and key takeaways.
+2. **Explaratory Data Analysis** - This chapter details the EDA process, findings and key takeaways.
 3. **Model Development** - This section describes the step-by-step methodology used to determine the best model to predict the load averages.
 4. **Conclusions** - This section briefly highlights the key takeaways from the model development efforts and the report in general.
 
