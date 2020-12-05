@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/53a73c97825a68ef3aa858c9e02ab50c75214f81/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/53a73c97825a68ef3aa858c9e02ab50c75214f81/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/53a73c97825a68ef3aa858c9e02ab50c75214f81/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/53a73c97825a68ef3aa858c9e02ab50c75214f81/))
+([permalink](https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/))
 was automatically generated
-from [banyekalaok/cee498report@53a73c9](https://github.com/banyekalaok/cee498report/tree/53a73c97825a68ef3aa858c9e02ab50c75214f81)
+from [banyekalaok/cee498report@b60e144](https://github.com/banyekalaok/cee498report/tree/b60e144afd22ebd94be6d59a6cfede79772d4557)
 on December 5, 2020.
 </em></small>
 
@@ -122,9 +122,8 @@ on December 5, 2020.
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
 
 ![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
+**CUMTD Route Map**
+](https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png "Wide image"){#fig:wide-image}
 
 ## Project Group 7's Objective 
 

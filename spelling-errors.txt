@@ -5,6 +5,7 @@ consdieration
 continous
 COVID
 csv
+CUMTD
 dataset
 datetime
 EDA
