@@ -3,7 +3,7 @@ author-meta:
 - abc
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-04'
+date-meta: '2020-12-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -22,9 +22,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="CEE498 Project7 Bus Ridership Analysis" />
 
-  <meta name="dc.date" content="2020-12-04" />
+  <meta name="dc.date" content="2020-12-05" />
 
-  <meta name="citation_publication_date" content="2020-12-04" />
+  <meta name="citation_publication_date" content="2020-12-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a74dd6140931e6bc5e7c4042d3502eaf19aed723/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/b85f008fcf7d54ea139c199d321e6d17975aa6d2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a74dd6140931e6bc5e7c4042d3502eaf19aed723/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b85f008fcf7d54ea139c199d321e6d17975aa6d2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a74dd6140931e6bc5e7c4042d3502eaf19aed723/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b85f008fcf7d54ea139c199d321e6d17975aa6d2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,10 +94,10 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/a74dd6140931e6bc5e7c4042d3502eaf19aed723/))
+([permalink](https://banyekalaok.github.io/cee498report/v/b85f008fcf7d54ea139c199d321e6d17975aa6d2/))
 was automatically generated
-from [banyekalaok/cee498report@a74dd61](https://github.com/banyekalaok/cee498report/tree/a74dd6140931e6bc5e7c4042d3502eaf19aed723)
-on December 4, 2020.
+from [banyekalaok/cee498report@b85f008](https://github.com/banyekalaok/cee498report/tree/b85f008fcf7d54ea139c199d321e6d17975aa6d2)
+on December 5, 2020.
 </em></small>
 
 ## Authors
@@ -120,6 +120,11 @@ on December 4, 2020.
 # Chapter 1. Introduction
 
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
+
+![
+**A square image at actual size and with a bottom caption.**
+Loaded from the latest version of image on GitHub.
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
 
 ## Project Group 7's Objective 
 
