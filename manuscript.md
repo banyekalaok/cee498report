@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/901f31fa92e8e9c381a3a9b318943902ff8f9ae4/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/901f31fa92e8e9c381a3a9b318943902ff8f9ae4/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/901f31fa92e8e9c381a3a9b318943902ff8f9ae4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/901f31fa92e8e9c381a3a9b318943902ff8f9ae4/))
+([permalink](https://banyekalaok.github.io/cee498report/v/518a09fffe8fc9ef143f27bf6657f72ec0404982/))
 was automatically generated
-from [banyekalaok/cee498report@901f31f](https://github.com/banyekalaok/cee498report/tree/901f31fa92e8e9c381a3a9b318943902ff8f9ae4)
+from [banyekalaok/cee498report@518a09f](https://github.com/banyekalaok/cee498report/tree/518a09fffe8fc9ef143f27bf6657f72ec0404982)
 on December 5, 2020.
 </em></small>
 
@@ -121,20 +121,12 @@ on December 5, 2020.
 
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
 
-<p><img src="https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png" alt="foo1" title="title" /></p>
+<p><img src="images/Figure1.png" alt="foo1" title="title" /></p>
 
 ![
 **A square image at actual size and with a bottom caption.**
 Loaded from the latest version of image on GitHub.
-](https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png "foo2"){#fig:square-image}
-
-<p><img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="foo3" title="title" /></p>
-
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "foo4"){#fig:square-image}
-
+](images/Figure1.png "foo2"){#fig:square-image}
 
 ## Project Group 7's Objective 
 
