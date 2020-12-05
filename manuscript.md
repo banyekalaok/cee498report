@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/b60e144afd22ebd94be6d59a6cfede79772d4557/))
+([permalink](https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/))
 was automatically generated
-from [banyekalaok/cee498report@b60e144](https://github.com/banyekalaok/cee498report/tree/b60e144afd22ebd94be6d59a6cfede79772d4557)
+from [banyekalaok/cee498report@45b1f49](https://github.com/banyekalaok/cee498report/tree/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8)
 on December 5, 2020.
 </em></small>
 
@@ -123,7 +123,7 @@ As part of the course project for the class, project group 7 acquired bus riders
 
 ![
 **CUMTD Route Map**
-](https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png "Wide image"){#fig:wide-image}
+](https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png){#fig:wide-image}
 
 ## Project Group 7's Objective 
 

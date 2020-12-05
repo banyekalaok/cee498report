@@ -9,7 +9,7 @@ CUMTD
 dataset
 datetime
 EDA
-explaratory
+Explaratory
 hyperparameter
 hyperparameters
 Inisghts
