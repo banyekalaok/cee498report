@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/e8870abb9ffea4b9932f2edb5805d8d06af9ed42">banyekalaok/cee498report@e8870ab</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/14887c189853bb03cc7e8b56d30ca08f0aad6fce">banyekalaok/cee498report@14887c1</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -92,8 +92,10 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
 <h2 id="dataset-overview">1.2 Dataset Overview</h2>
 <p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.</p>
-<p>No Date Trip Duty Line Block Course Pattern Sched. start Sched. end P-Stops M-Stops Vehicle Veh. type Capacity Full capacity Capacity (pract.) EMPTY_1 Load factor [%] Load factor (pract.)[%] EMPTY_2 Total in Total out Load avg Min Max EMPTY_3 PM PM factor [%] Graphic</p>
+<div id="tbl:constant-digits" class="tablenos">
 <table style="width:100%;">
+<caption><span>Table 1:</span> Ridershippertrip_PerTrip-AugustWeekdays9-9
+</caption>
 <colgroup>
 <col style="width: 3%" />
 <col style="width: 3%" />
@@ -180,27 +182,150 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: center;">8/3/2020</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">BLUE[V:0001]</td>
+<td style="text-align: center;">402</td>
+<td style="text-align: center;">1290495</td>
+<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
+<td style="text-align: center;">BLUE</td>
+<td style="text-align: center;">51</td>
+<td style="text-align: center;">7:03:00</td>
+<td style="text-align: center;">7:35:00</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">1727</td>
+<td style="text-align: center;">NEWFLYER(2017)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">7.02</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: center;">8/3/2020</td>
+<td style="text-align: center;">332</td>
+<td style="text-align: center;">BLUE[V:0001]</td>
+<td style="text-align: center;">402</td>
+<td style="text-align: center;">1290495</td>
+<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
+<td style="text-align: center;">4W</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">7:40:00</td>
+<td style="text-align: center;">8:13:00</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">53</td>
+<td style="text-align: center;">1727</td>
+<td style="text-align: center;">NEWFLYER(2017)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: center;">8/3/2020</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">BLUE[V:0001]</td>
+<td style="text-align: center;">402</td>
+<td style="text-align: center;">1290495</td>
+<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
+<td style="text-align: center;">BLUE</td>
+<td style="text-align: center;">51</td>
+<td style="text-align: center;">8:17:00</td>
+<td style="text-align: center;">8:51:00</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">1727</td>
+<td style="text-align: center;">NEWFLYER(2017)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0.6</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4.68</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: center;">8/3/2020</td>
+<td style="text-align: center;">201</td>
+<td style="text-align: center;">BLUE[V:0001]</td>
+<td style="text-align: center;">402</td>
+<td style="text-align: center;">1290495</td>
+<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
+<td style="text-align: center;">4W</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">8:51:00</td>
+<td style="text-align: center;">9:24:00</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">1727</td>
+<td style="text-align: center;">NEWFLYER(2017)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">4.27</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
-<p>2 8/3/2020 22 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>BLUE 51 7:03:00 7:35:00 5 52 1727 NEWFLYER(2017) 0 0 0 0 0 2 2 1 0 2 7.02 0<br />
-3 8/3/2020 332 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>4W 7:40:00 8:13:00 4 53 1727 NEWFLYER(2017) 0 0 0 0 0 1 1 0 0 0 0 0<br />
-4 8/3/2020 30 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>BLUE 51 8:17:00 8:51:00 8 52 1727 NEWFLYER(2017) 0 0 0 0 0 2 2 0.6 0 2 4.68 0<br />
-5 8/3/2020 201 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>4W 8:51:00 9:24:00 7 52 1727 NEWFLYER(2017) 0 0 0 0 0 3 3 0.5 0 2 4.27 0</p>
-<p>Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores}</p>
+</div>
 <h2 id="project-objective">1.3 Project Objective</h2>
 <p>Group 7’s project objective is to use the bus data to predict the buses load averages (average number of passengers onboard during a trip). This project is of particular interest to CU-MTD because in 2020, the bus load averages have significantly decreased due to the COVID-19 pandemic. Therefore, any results or conclusions that help CU-MTD better predict the load averages could increase their operating efficiencies and minimize costs.</p>
 <h2 id="full-report-structure">1.4 Full Report Structure</h2>

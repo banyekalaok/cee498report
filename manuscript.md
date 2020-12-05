@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/))
+([permalink](https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/))
 was automatically generated
-from [banyekalaok/cee498report@e8870ab](https://github.com/banyekalaok/cee498report/tree/e8870abb9ffea4b9932f2edb5805d8d06af9ed42)
+from [banyekalaok/cee498report@14887c1](https://github.com/banyekalaok/cee498report/tree/14887c189853bb03cc7e8b56d30ca08f0aad6fce)
 on December 5, 2020.
 </em></small>
 
@@ -132,19 +132,16 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 ## 1.2 Dataset Overview
 We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.
 
-No	Date	Trip	Duty	Line	Block	Course	Pattern	Sched. start	Sched. end	P-Stops	M-Stops	Vehicle	Veh. type	Capacity	Full capacity	Capacity (pract.)	EMPTY_1	Load factor [%]	Load factor (pract.)[%]	EMPTY_2	Total in	Total out	Load avg	Min	Max	EMPTY_3	PM	PM factor [%]	Graphic
-
-| No | Date          | Trip          | Duty        | Line           | Block | Course|	Pattern|	Sched. start|	Sched. end|	P-Stops|	M-Stops|	Vehicle|	Veh. type|	Capacity|	Full capacity|	Capacity (pract.)|	EMPTY_1|	Load factor [%]|	Load factor (pract.)[%]|	EMPTY_2|	Total in|	Total out|	Load avg|	Min|	Max|	EMPTY_3|	PM|	PM factor [%]|	Graphic|
+| No | Date| Trip| Duty| Line| Block | Course|	Pattern|	Sched. start|	Sched. end|	P-Stops|	M-Stops|	Vehicle|	Veh. type|	Capacity|	Full capacity|	Capacity (pract.)|	EMPTY_1|	Load factor [%]|	Load factor (pract.)[%]|	EMPTY_2|	Total in|	Total out|	Load avg|	Min|	Max|	EMPTY_3|	PM|	PM factor [%]|	Graphic|
 |:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-|1|	8/3/2020|	4214|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 3|	6:43:00|	7:03:00|	0|	3|	1727|	NEWFLYER(2017)|	0|	0|	0|		0|	0|		0|	0|	0|	0|	0|		0|	0|	
-2	8/3/2020	22		BLUE[V:0001]	402	1290495	[@124.0.137636458@]BLUE 51	7:03:00	7:35:00	5	52	1727	NEWFLYER(2017)	0	0	0		0	0		2	2	1	0	2		7.02	0	
-3	8/3/2020	332		BLUE[V:0001]	402	1290495	[@124.0.137636458@]4W	7:40:00	8:13:00	4	53	1727	NEWFLYER(2017)	0	0	0		0	0		1	1	0	0	0		0	0	
-4	8/3/2020	30		BLUE[V:0001]	402	1290495	[@124.0.137636458@]BLUE 51	8:17:00	8:51:00	8	52	1727	NEWFLYER(2017)	0	0	0		0	0		2	2	0.6	0	2		4.68	0	
-5	8/3/2020	201		BLUE[V:0001]	402	1290495	[@124.0.137636458@]4W	8:51:00	9:24:00	7	52	1727	NEWFLYER(2017)	0	0	0		0	0		3	3	0.5	0	2		4.27	0	
+|1|	8/3/2020|	4214|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 3|	6:43:00|	7:03:00|	0|	3|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		0|	0|	0|	0|	0|	|	0|	0|	|
+|2|	8/3/2020|	22|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 51|	7:03:00|	7:35:00|	5|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	1|	0|	2|	|	7.02|	0|	|
+|3|	8/3/2020|	332|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|4W| 3|	7:40:00|	8:13:00|	4|	53|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		1|	1|	0|	0|	0|	|	0|	0|	|
+|4|	8/3/2020|	30|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 51|	8:17:00|	8:51:00|	8|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	0.6|	0|	2|	|	4.68|	0|	|
+|5|	8/3/2020|	201|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|4W| 3|	8:51:00|	9:24:00|	7|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		3|	3|	0.5|	0|	2|	|	4.27|	0|	|
 
-
-Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores}
+Table: Ridershippertrip_PerTrip-AugustWeekdays9-9
+{#tbl:constant-digits}
 
 ## 1.3 Project Objective 
 Group 7's project objective is to use the bus data to predict the buses load averages (average number of passengers onboard during a trip). This project is of particular interest to CU-MTD because in 2020, the bus load averages have significantly decreased due to the COVID-19 pandemic. Therefore, any results or conclusions that help CU-MTD better predict the load averages could increase their operating efficiencies and minimize costs.

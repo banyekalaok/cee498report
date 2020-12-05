@@ -1,4 +1,5 @@
 alightings
+AugustWeekdays
 boardings
 Champaign
 consdieration
@@ -19,11 +20,13 @@ Kaggle
 MAPE
 MTD
 NEWFLYER
+PerTrip
 pract
 pre
 predicator
 Reliablity
 relu
+Ridershippertrip
 RMSE
 Sched
 Thererfore
