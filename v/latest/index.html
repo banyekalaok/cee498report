@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/e8870abb9ffea4b9932f2edb5805d8d06af9ed42/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/ac413d08a0fa0ae5f58dce3cfa77b376d22b6915">banyekalaok/cee498report@ac413d0</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/e8870abb9ffea4b9932f2edb5805d8d06af9ed42">banyekalaok/cee498report@e8870ab</a>
 on December 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -81,7 +81,7 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </small></li>
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
-<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CU-MTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.</p>
+<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
 <img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
@@ -89,9 +89,118 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </div>
 <h2 id="background">1.1 Background</h2>
 <p>Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
-If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CU-MTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
+If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
 <h2 id="dataset-overview">1.2 Dataset Overview</h2>
 <p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.</p>
+<p>No Date Trip Duty Line Block Course Pattern Sched. start Sched. end P-Stops M-Stops Vehicle Veh. type Capacity Full capacity Capacity (pract.) EMPTY_1 Load factor [%] Load factor (pract.)[%] EMPTY_2 Total in Total out Load avg Min Max EMPTY_3 PM PM factor [%] Graphic</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">No</th>
+<th style="text-align: center;">Date</th>
+<th style="text-align: center;">Trip</th>
+<th style="text-align: center;">Duty</th>
+<th style="text-align: center;">Line</th>
+<th style="text-align: center;">Block</th>
+<th style="text-align: center;">Course</th>
+<th style="text-align: center;">Pattern</th>
+<th style="text-align: center;">Sched. start</th>
+<th style="text-align: center;">Sched. end</th>
+<th style="text-align: center;">P-Stops</th>
+<th style="text-align: center;">M-Stops</th>
+<th style="text-align: center;">Vehicle</th>
+<th style="text-align: center;">Veh. type</th>
+<th style="text-align: center;">Capacity</th>
+<th style="text-align: center;">Full capacity</th>
+<th style="text-align: center;">Capacity (pract.)</th>
+<th style="text-align: center;">EMPTY_1</th>
+<th style="text-align: center;">Load factor [%]</th>
+<th style="text-align: center;">Load factor (pract.)[%]</th>
+<th style="text-align: center;">EMPTY_2</th>
+<th style="text-align: center;">Total in</th>
+<th style="text-align: center;">Total out</th>
+<th style="text-align: center;">Load avg</th>
+<th style="text-align: center;">Min</th>
+<th style="text-align: center;">Max</th>
+<th style="text-align: center;">EMPTY_3</th>
+<th style="text-align: center;">PM</th>
+<th style="text-align: center;">PM factor [%]</th>
+<th style="text-align: center;">Graphic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">8/3/2020</td>
+<td style="text-align: center;">4214</td>
+<td style="text-align: center;">BLUE[V:0001]</td>
+<td style="text-align: center;">402</td>
+<td style="text-align: center;">1290495</td>
+<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
+<td style="text-align: center;">BLUE</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6:43:00</td>
+<td style="text-align: center;">7:03:00</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1727</td>
+<td style="text-align: center;">NEWFLYER(2017)</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>2 8/3/2020 22 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>BLUE 51 7:03:00 7:35:00 5 52 1727 NEWFLYER(2017) 0 0 0 0 0 2 2 1 0 2 7.02 0<br />
+3 8/3/2020 332 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>4W 7:40:00 8:13:00 4 53 1727 NEWFLYER(2017) 0 0 0 0 0 1 1 0 0 0 0 0<br />
+4 8/3/2020 30 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>BLUE 51 8:17:00 8:51:00 8 52 1727 NEWFLYER(2017) 0 0 0 0 0 2 2 0.6 0 2 4.68 0<br />
+5 8/3/2020 201 BLUE[V:0001] 402 1290495 <span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span>4W 8:51:00 9:24:00 7 52 1727 NEWFLYER(2017) 0 0 0 0 0 3 3 0.5 0 2 4.27 0</p>
+<p>Table: A table with a top caption and specified relative column widths.
+{#tbl:bowling-scores}</p>
 <h2 id="project-objective">1.3 Project Objective</h2>
 <p>Group 7’s project objective is to use the bus data to predict the buses load averages (average number of passengers onboard during a trip). This project is of particular interest to CU-MTD because in 2020, the bus load averages have significantly decreased due to the COVID-19 pandemic. Therefore, any results or conclusions that help CU-MTD better predict the load averages could increase their operating efficiencies and minimize costs.</p>
 <h2 id="full-report-structure">1.4 Full Report Structure</h2>
