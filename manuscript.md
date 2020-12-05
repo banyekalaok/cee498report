@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a37f4785191aed7b605a6c87f57551f9c82bfff3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a37f4785191aed7b605a6c87f57551f9c82bfff3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a37f4785191aed7b605a6c87f57551f9c82bfff3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8/))
+([permalink](https://banyekalaok.github.io/cee498report/v/a37f4785191aed7b605a6c87f57551f9c82bfff3/))
 was automatically generated
-from [banyekalaok/cee498report@45b1f49](https://github.com/banyekalaok/cee498report/tree/45b1f499a1fbc1371fa8a51eb4adbcf388936cc8)
+from [banyekalaok/cee498report@a37f478](https://github.com/banyekalaok/cee498report/tree/a37f4785191aed7b605a6c87f57551f9c82bfff3)
 on December 5, 2020.
 </em></small>
 
@@ -123,7 +123,7 @@ As part of the course project for the class, project group 7 acquired bus riders
 
 ![
 **CUMTD Route Map**
-](https://github.com/banyekalaok/cee498report/blob/master/content/images/Figure1.png){#fig:wide-image}
+](https://github.com/banyekalaok/cs225/blob/master/mp_stickers/i.png){#fig:wide-image}
 
 ## Project Group 7's Objective 
 
