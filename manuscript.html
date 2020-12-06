@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/c23cda476443d0cf278070c3e108f12b5a5807d5">banyekalaok/cee498report@c23cda4</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/37e124f984d84de354fd3c6bacd64979b15c9cd5">banyekalaok/cee498report@37e124f</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -365,14 +365,29 @@ The following section summarizes the EDA results that are relevant to the model 
 <figure>
 <img src="images/eda7.png" alt="" /><figcaption>correlation heat map</figcaption>
 </figure>
-<p>Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use <a href="http://mtd.org/maps-and-schedules/routes/">Number of Routes’ Names in CUMTD</a> to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing on figure 9.</p>
+<p>Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use <a href="http://mtd.org/maps-and-schedules/routes/">Number of Routes’ Names in CUMTD</a> to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
 <img src="images/load_avg_in_all_days(average).png" alt="" /><figcaption><span>Figure 2:</span> Load Avg for all buses in average</figcaption>
 </figure>
 </div>
-<p>Figure 14 informs that the a $ trip &lt; 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.</p>
-<p><strong>Figure 14. Bar plot of duration against P-stops filtered dataset.</strong></p>
+<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.</p>
+<div id="fig:tall-image" class="fignos">
+<figure>
+<img src="images/load_avg_in_each_day.png" style="height:10in" alt="" /><figcaption><span>Figure 3:</span> Load Avg in each day</figcaption>
+</figure>
+</div>
+<div id="fig:tall-image" class="fignos">
+<figure>
+<img src="images/load_avg_in_each_bus_line.png" style="height:10in" alt="" /><figcaption><span>Figure 4:</span> Load Avg for each bus line</figcaption>
+</figure>
+</div>
+<p>With these comparisons, some takeaways can be summarized as follows:</p>
+<ul>
+<li>There were only a few increasement after semester opened. It shows that the pandemic decreases the students’ willingness of taking buses to face-to-face classes.</li>
+<li>In August, the YELLOW, RED, LAVENDER, GREEN and GREY buses have relatively high passengers.</li>
+<li>The Illini routes changed the most after semester started, we believe one of the reasons is that students who live in One North or One South must take buses to the classroom.</li>
+</ul>
 <h2 id="eda-results-summary">EDA Results Summary</h2>
 <p>The following section summarizes the EDA results that are relevant to the model development effort. Through the EDA of the bus data the following information was noted about the data set:</p>
 <ul>

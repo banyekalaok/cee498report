@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/))
+([permalink](https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/))
 was automatically generated
-from [banyekalaok/cee498report@c23cda4](https://github.com/banyekalaok/cee498report/tree/c23cda476443d0cf278070c3e108f12b5a5807d5)
+from [banyekalaok/cee498report@37e124f](https://github.com/banyekalaok/cee498report/tree/37e124f984d84de354fd3c6bacd64979b15c9cd5)
 on December 6, 2020.
 </em></small>
 
@@ -200,15 +200,23 @@ Then, a pairwise scatter plot is used to show the degree of linearity of the rel
 
 ![correlation heat map](images/eda7.png)
 
-Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing on figure 9.
+Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below.
 
 ![Load Avg for all buses in average](images/load_avg_in_all_days(average).png){#fig:square-image}
 
+What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.
 
-Figure 14 informs that the a $ trip < 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.
+![Load Avg in each day](images/load_avg_in_each_day.png){#fig:tall-image height=10in}
+
+![Load Avg for each bus line](images/load_avg_in_each_bus_line.png){#fig:tall-image height=10in}
+
+With these comparisons, some takeaways can be summarized as follows:
+
+* There were only a few increasement after semester opened. It shows that the pandemic decreases the students' willingness of taking buses to face-to-face classes.
+* In August, the YELLOW, RED, LAVENDER, GREEN and GREY buses have relatively high passengers.
+* The Illini routes changed the most after semester started, we believe one of the reasons is that students who live in One North or One South must take buses to the classroom.
 
 
-**Figure 14. Bar plot of duration against P-stops filtered dataset.**
 
 ## EDA Results Summary
 

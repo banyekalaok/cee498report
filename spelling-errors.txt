@@ -6,7 +6,7 @@ continous
 COVID
 csv
 CUMTD
-dataframe
+Dataframe
 Dataset
 datasets
 datetime
@@ -18,6 +18,8 @@ GridsearchCV
 heatmap
 hyperparameter
 hyperparameters
+Illini
+increasement
 Inisghts
 Jupyter
 Kaggle
