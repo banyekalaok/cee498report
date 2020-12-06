@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/37e124f984d84de354fd3c6bacd64979b15c9cd5/))
+([permalink](https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/))
 was automatically generated
-from [banyekalaok/cee498report@37e124f](https://github.com/banyekalaok/cee498report/tree/37e124f984d84de354fd3c6bacd64979b15c9cd5)
+from [banyekalaok/cee498report@ca96139](https://github.com/banyekalaok/cee498report/tree/ca9613909414ffdaf12d9f7fa05074f0b1ca227f)
 on December 6, 2020.
 </em></small>
 
@@ -200,7 +200,14 @@ Then, a pairwise scatter plot is used to show the degree of linearity of the rel
 
 ![correlation heat map](images/eda7.png)
 
-Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below.
+Next, we try to find the charateristic of load average in different workdays. By seperating load average into different workdays from Monday to Friday, we plot the sum of the load average and their durations showing as below.
+
+![Load Avg in weekdays](images/Load_Avg_weekdays.png)
+![Duration of Load Avg](images/Load_Avg_duration.png)
+
+From the figures, we find that the number of trips are fairly evenly distributed throughout the week, and the start and end of the work week have outliers.
+
+Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
 ![Load Avg for all buses in average](images/load_avg_in_all_days(average).png){#fig:square-image}
 
