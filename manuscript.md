@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/84fc3ec2f21b3768b2eb84f3f2cda774d2e87bdf/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/84fc3ec2f21b3768b2eb84f3f2cda774d2e87bdf/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/84fc3ec2f21b3768b2eb84f3f2cda774d2e87bdf/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/))
+([permalink](https://banyekalaok.github.io/cee498report/v/84fc3ec2f21b3768b2eb84f3f2cda774d2e87bdf/))
 was automatically generated
-from [banyekalaok/cee498report@ff93a13](https://github.com/banyekalaok/cee498report/tree/ff93a1306edc36bbc07909ddccc6aa9362abe989)
+from [banyekalaok/cee498report@84fc3ec](https://github.com/banyekalaok/cee498report/tree/84fc3ec2f21b3768b2eb84f3f2cda774d2e87bdf)
 on December 6, 2020.
 </em></small>
 
@@ -174,7 +174,8 @@ The content in chapter 2 is broken down into the following 3 sections:
 The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. 
 The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.
 
-**Figure 1. Trip distribution per weekday**
+![Load Avg in weekdays](images/Load_Avg_weekdays.png)
+![Duration of Load Avg](images/Load_Avg_duration.png)
 
 Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.
@@ -199,13 +200,6 @@ First, we dropped all the empty columns and columns with categorical values or s
 Then, a pairwise scatter plot is used to show the degree of linearity of the relationship between each feature, which gives us a rough idea as to what kind of model should be used.
 
 ![correlation heat map](images/eda7.png)
-
-Next, we try to find the charateristic of load average in different workdays. By seperating load average into different workdays from Monday to Friday, we plot the sum of the load average and their durations showing as below.
-
-![Load Avg in weekdays](images/Load_Avg_weekdays.png)
-![Duration of Load Avg](images/Load_Avg_duration.png)
-
-From the figures, we find that the number of trips are fairly evenly distributed throughout the week, and the start and end of the work week have outliers.
 
 Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
