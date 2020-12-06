@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/bc9ef95a46af561e898f804be0808320c391f12d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/bc9ef95a46af561e898f804be0808320c391f12d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/bc9ef95a46af561e898f804be0808320c391f12d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/))
+([permalink](https://banyekalaok.github.io/cee498report/v/bc9ef95a46af561e898f804be0808320c391f12d/))
 was automatically generated
-from [banyekalaok/cee498report@20b0160](https://github.com/banyekalaok/cee498report/tree/20b0160e92edb580c44a7e7c634ce3038afa891e)
+from [banyekalaok/cee498report@bc9ef95](https://github.com/banyekalaok/cee498report/tree/bc9ef95a46af561e898f804be0808320c391f12d)
 on December 6, 2020.
 </em></small>
 
@@ -385,7 +385,7 @@ The neural network model has been taken in our team. As a subfield of machine le
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
 ![
-**Nenural Network.**
+**Neural Network.**
 ](images/Neural network.png){#fig:wide-image}
 
 When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in **Figure #**. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
@@ -405,8 +405,6 @@ To make the predictions match well in validations, batch mode would be applied i
 After the optimization as stochastic gradient descent (SGD), take learning rate as 0.1, the RMSE is 0.268, and the R2 score is 0.965. 
 
 ### Most Predictive Model
-
-**My model was best with relu layers and dropout regularization only. Would probably be even better if it had automatic hyperparameter and parameter selection!(kundayi)**
 
 Our best mode is a type of neural network model developed by Yujing using the sklearn package. The name of model is **Gradient Boosting Regressor**.
 
@@ -443,8 +441,9 @@ The following figure shows the predictions against targets. The straight line re
 
 As was shown in chapter 4 the most predictive model was able to predict the load average with 0.98 accuracy. Some factors need to be taken into consdieration about this process:
 
-1. A significant amount of pre-processing was used - To make this model more cost- and time-effective the input data needs to be tidy before going into the data. This can be achieved by changing the way the data is stored or creating classes and functions that automatically clean the data.
-2. Reliablity - This model was developed using data from a single month from 2020 (August). Therefore, although the model had high predictive potential with the August data. It is possible that the model is not able to accurately predict load averages for other months were passenger habits may significantly differ (e.g., middle of summer, winter or spring). Thererfore, to truly optimize the model a larger year round data set is recommended. It would probably be best to train the model using at least 1 month of data from the 4 seasons of a year.
+1. **Criticality of data tidying and pre-processing** - The developed models required a significant amount of preprocessing. Various approaches could be taken to tidy and preprocess the data that led to different model performance. Therefore, to make this model more cost- and time-effective the input data needs to be tidy before going into the data and clear instructions of what processing should be done can be provided. 
+2. **Reliablity** - The most predictive model was developed using data from a single month from 2020 (August). Therefore, although the model had high predictive potential with the August data. It is possible that the model is not able to accurately predict load averages for other months were passenger habits may significantly differ (e.g., middle of summer, winter or spring). Thererfore, to truly optimize the model a larger year round data set is recommended. It would probably be best to train the model using at least 1 month of data from the 4 seasons of a year, or historically busiest months in fall and spring semester and the winter and summer breaks.
+3. **Impact of COVID-19** - It was observed that most bus lines had relatively low load averages (less than 3 passengers). To be able to implement the selected model, it would be important to assess data from this current fall semester to further investigate changes in passenger behavior. To help with this effort, CU-MTD (and other transit organizations) may want to consider using other metrics, such as ldle time, fuel consumption, and bus headway, to develop models.
 
 
 

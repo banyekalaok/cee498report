@@ -6,7 +6,7 @@ COVID
 csv
 CUMTD
 dataframe
-dataset
+Dataset
 datasets
 datetime
 df
@@ -17,17 +17,17 @@ GridsearchCV
 hanzhs
 heatmap
 hyperparameter
-hyperparameters
+Hyperparameters
 Illini
 increasement
 Inisghts
 Jupyter
 Kaggle
-kundayi
+Kundayi
+ldle
 Liu
 longhuang
 MTD
-Nenural
 NEWFLYER
 overfitting
 perditions
@@ -38,7 +38,6 @@ preprocess
 preprocessing
 Regressor
 Reliablity
-relu
 RMSE
 Ruihao
 Sched
@@ -54,7 +53,7 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 Yanhan
 YanhanL
 Yujing
