@@ -4,7 +4,7 @@ continous
 COVID
 csv
 CUMTD
-Dataframe
+dataframe
 dataset
 datasets
 datetime
@@ -22,7 +22,6 @@ Inisghts
 Jupyter
 Kaggle
 kundayi
-MAPE
 MTD
 Nenural
 NEWFLYER
@@ -32,7 +31,7 @@ pract
 pre
 predicator
 preprocess
-Preprocessing
+preprocessing
 Regressor
 Reliablity
 relu
@@ -42,6 +41,7 @@ serval
 SGD
 sklearn
 subfield
+SVR
 Thererfore
 traning
 underfit

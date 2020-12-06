@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/))
+([permalink](https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/))
 was automatically generated
-from [banyekalaok/cee498report@5f42a64](https://github.com/banyekalaok/cee498report/tree/5f42a64c6bc5bc224ff46db3fce3a84108ed83be)
+from [banyekalaok/cee498report@66b27ef](https://github.com/banyekalaok/cee498report/tree/66b27ef8725deffd12d938cf59e60eefbaa2c584)
 on December 6, 2020.
 </em></small>
 
@@ -246,16 +246,6 @@ Similar steps are taken in this section as were taken in the EDA process. Howeve
 
 The following paragraphs describe the particular ways the training data was cleaned to result in meaningful predictive models. The 2 main ways feature engineering will be conducted on this data set are: 1) The developers knowledge on the dataset (as presented in the EDA), and 2) assessing the statistics on the dataset.
 
-Based on the EDA, we know that the following features have no value to the model we'll be developing. Therefore, the following features can be removed from the data set: 
-
-* **Duty**, **EMPTY_1**, **EMPTY_2**, **EMPTY_3** and **Graphic** - Features with blank entries and no description in the manual on the data set.
-* **Capacity**, **Full capacity**, **Capacity (pract.)**, **Load factor [%]**, **Load factor (pract.)[%]** and the **PM factor [%]** columns were all 0's.
-
-The EDA also revealed that the following data sets had numbers that didn't actually correspond to a numerical value (i.e., the numbers are codes that have no value to the model development effort).
-
-* **No (train)/index (test)**, **Trip**,**Block**, **Course**, **Pattern**, and **Vehicle**.
-* **Date**, **Sched. start**, and **Sched. end** - They were used to determine the schedules, day and duration. From here on, they no longer have model development value.
-
 ## Data Preprocessing
 
 Data preprocessing is an indispensable step in machine learning. It is important to preprocess the data which should be prior to model development since the quality of the data can determine the final performance of our model.
@@ -307,10 +297,15 @@ The follow sections goes through a step by step process to develop and identify 
 
 ### Establish a Baseline Model
 
-Before building a trainable model we'll create a baseline that simply returns the load average.
+Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model's coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.
 
+![Illustration of support vector regression model](images/SVR illustration.png)
 
-As expected, the baseline model had a high root mean square error (RMSE) and mean absolute percentage error (MAPE) on both the training and validation data. The next section assesses if a dense model can produce a better model with lower metrics.
+The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.
+
+![Support vector regression model results](images/SVR Results.png)
+
+As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.
 
 ### Develop a More Complex Model
 
