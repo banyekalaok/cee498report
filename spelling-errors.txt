@@ -12,7 +12,7 @@ dataset
 datasets
 datetime
 EDA
-Explaratory
+explaratory
 heatmap
 hyperparameter
 hyperparameters
@@ -37,6 +37,7 @@ Rescaling
 Ridershippertrip
 RMSE
 Sched
+serval
 SGD
 subfield
 Thererfore

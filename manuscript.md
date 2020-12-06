@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/))
+([permalink](https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/))
 was automatically generated
-from [banyekalaok/cee498report@43c9973](https://github.com/banyekalaok/cee498report/tree/43c99735c28bb431a8d0b84fea686f1519fa7257)
+from [banyekalaok/cee498report@9bc7f2e](https://github.com/banyekalaok/cee498report/tree/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167)
 on December 6, 2020.
 </em></small>
 
@@ -301,6 +301,8 @@ Since most machine learning algorithms require numerical input and output variab
 - The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.
 - The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.
 - Similar logic as above was used to convert the week days using one-hot encoding.
+
+In our project, We create a function called "preprocessing" which including serval functions to deal with different data as we discussed earlier. Feature engineering, Handing Missing data, Feature scaling and One-hot encoding method are included in this function.
 
 ### Cross-validation
 
