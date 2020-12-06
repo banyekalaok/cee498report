@@ -7,7 +7,7 @@ continous
 COVID
 csv
 CUMTD
-Dataset
+dataset
 datasets
 datetime
 EDA
@@ -24,6 +24,7 @@ PerTrip
 pract
 pre
 predicator
+Preprocessing
 Reliablity
 relu
 Ridershippertrip

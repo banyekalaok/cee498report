@@ -3,7 +3,7 @@ author-meta:
 - abc
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-05'
+date-meta: '2020-12-06'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -22,9 +22,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="CEE498 Project7 Bus Ridership Analysis" />
 
-  <meta name="dc.date" content="2020-12-05" />
+  <meta name="dc.date" content="2020-12-06" />
 
-  <meta name="citation_publication_date" content="2020-12-05" />
+  <meta name="citation_publication_date" content="2020-12-06" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,10 +94,10 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/14887c189853bb03cc7e8b56d30ca08f0aad6fce/))
+([permalink](https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/))
 was automatically generated
-from [banyekalaok/cee498report@14887c1](https://github.com/banyekalaok/cee498report/tree/14887c189853bb03cc7e8b56d30ca08f0aad6fce)
-on December 5, 2020.
+from [banyekalaok/cee498report@44fb404](https://github.com/banyekalaok/cee498report/tree/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9)
+on December 6, 2020.
 </em></small>
 
 ## Authors
@@ -214,7 +214,7 @@ The following features were identified to have strong predictive ability, indica
 * Max (0.90).
 * PM (0.85).
 
-# Chapter 3. Model Development
+# Chapter 3. Data Preprocessing
 
 The content in chapter 3 is broken down into the following 2 sections:
 
