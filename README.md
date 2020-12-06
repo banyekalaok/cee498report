@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/banyekalaok/cee498report/tree/gh-pages) branch hosts the contents of this directory at <https://banyekalaok.github.io/cee498report/>.
-The permalink for this webpage version is <https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/>.
+The permalink for this webpage version is <https://banyekalaok.github.io/cee498report/v/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://banyekalaok.github.io/cee498report/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`7ef8f447e449f1c86a561ac781b42f7c2b0ef54c`](https://github.com/banyekalaok/cee498report/commit/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c).
+[`a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2`](https://github.com/banyekalaok/cee498report/commit/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2).
