@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/a25d7ad7b8530970ed7384e93baa6cc289e7fc08">banyekalaok/cee498report@a25d7ad</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/43c99735c28bb431a8d0b84fea686f1519fa7257">banyekalaok/cee498report@43c9973</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -431,8 +431,9 @@ The following section summarizes the EDA results that are relevant to the model 
 <li>The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.</li>
 <li>Similar logic as above was used to convert the week days using one-hot encoding.</li>
 </ul>
-<p>The last step in the setup process was to split the training data into training and validation data. This step is done to minimize the likelihood of creating a model that will over or underfit the data. A split of 70% and 30% between training and validation was used.</p>
-<h2 id="model-development-process">Model Development Process</h2>
+<h3 id="cross-validation">Cross-validation</h3>
+<p>In order to flag problems like overfitting or selection bias, we can do the cross-validation. Cross-validation is a technique in which we train our model using the subset of the data-set and then evaluate using the complementary subset of the data-set. This step is done to minimize the likelihood of creating a model that will over or underfit the data. To do the Cross-validation, we should split a part of original traning data as a validation set. In this case, I split the training set into X_train (80% of the original size of train_data) and X_validation (20% of the original size of train_data).</p>
+<h1 id="chapter-4.-model-development-process">Chapter 4. Model Development Process</h1>
 <p>The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.</p>
 <p>** I recommend we show 3 models. For each we should: discuss parameters and hyperparameters, show RMSE vs epochs (and perhaps 1 other metric [I used MAE]), then show predictions against targets.</p>
 <h3 id="establish-a-baseline-model">Establish a Baseline Model</h3>
