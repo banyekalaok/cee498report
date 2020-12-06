@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/))
+([permalink](https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/))
 was automatically generated
-from [banyekalaok/cee498report@7fddb7b](https://github.com/banyekalaok/cee498report/tree/7fddb7b19a3ff6973a4ad5992ff2331adc366942)
+from [banyekalaok/cee498report@c84c139](https://github.com/banyekalaok/cee498report/tree/c84c1399f2c7011b78e02d45ab27cdcc8369958e)
 on December 6, 2020.
 </em></small>
 
@@ -229,11 +229,11 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 
 ![
 **Load Avg in weekdays**
-](images/Load_Avg_weekdays.png)
+](images/Load_Avg_weekdays.png){#fig:square-image}
 
 ![
 **Duration of Load Avg**
-](images/Load_Avg_duration.png)
+](images/Load_Avg_duration.png "Duration")
 
 Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.
