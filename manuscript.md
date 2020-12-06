@@ -1,6 +1,11 @@
 ---
 author-meta:
-- abc
+- Kundayi Mugabe
+- Long Huang
+- Robert Zhang
+- Yanhan Lin
+- Yujing Liu
+- Zhongshu Han
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-06'
@@ -38,13 +43,29 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="abc" />
+  <meta name="citation_author" content="Kundayi Mugabe" />
 
   <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Long Huang" />
 
-  <meta name="twitter:creator" content="@abc" />
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
+
+  <meta name="citation_author" content="Robert Zhang" />
+
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
+
+  <meta name="citation_author" content="Yanhan Lin" />
+
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
+
+  <meta name="citation_author" content="Yujing Liu" />
+
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
+
+  <meta name="citation_author" content="Zhongshu Han" />
+
+  <meta name="citation_author_institution" content="Department of Civil Engineering, University of Illinois, Champaign-Urbana" />
 
   <link rel="canonical" href="https://banyekalaok.github.io/cee498report/" />
 
@@ -58,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a23d2fcb21a00fc60ef1075728e67986e5a5dce4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a23d2fcb21a00fc60ef1075728e67986e5a5dce4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a23d2fcb21a00fc60ef1075728e67986e5a5dce4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/))
+([permalink](https://banyekalaok.github.io/cee498report/v/a23d2fcb21a00fc60ef1075728e67986e5a5dce4/))
 was automatically generated
-from [banyekalaok/cee498report@66b27ef](https://github.com/banyekalaok/cee498report/tree/66b27ef8725deffd12d938cf59e60eefbaa2c584)
+from [banyekalaok/cee498report@a23d2fc](https://github.com/banyekalaok/cee498report/tree/a23d2fcb21a00fc60ef1075728e67986e5a5dce4)
 on December 6, 2020.
 </em></small>
 
@@ -104,13 +125,44 @@ on December 6, 2020.
 
 
 
-+ **abc**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Kundayi Mugabe**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [abc](https://github.com/abc)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [abc](https://twitter.com/abc)<br>
+    [mugabe2](https://github.com/mugabe2)<br>
+  <small>
+     Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  </small>
+
++ **Long Huang**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [longhuang-hit](https://github.com/longhuang-hit)<br>
+  <small>
+     Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  </small>
+
++ **Robert Zhang**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [banyekalaok](https://github.com/banyekalaok)<br>
+  <small>
+     Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  </small>
+
++ **Yanhan Lin**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [YanhanL](https://github.com/YanhanL)<br>
+  <small>
+     Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  </small>
+
++ **Yujing Liu**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [yujingl2](https://github.com/yujingl2)<br>
+  <small>
+     Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  </small>
+
++ **Zhongshu Han**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [hanzhs1225](https://github.com/hanzhs1225)<br>
   <small>
      Department of Civil Engineering, University of Illinois, Champaign-Urbana
   </small>

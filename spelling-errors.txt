@@ -1,11 +1,12 @@
+banyekalaok
 Champaign
 consdieration
 continous
 COVID
 csv
 CUMTD
-dataframe
-dataset
+Dataframe
+Dataset
 datasets
 datetime
 df
@@ -13,6 +14,7 @@ EDA
 explaratory
 GradientBoostingRegressor
 GridsearchCV
+hanzhs
 heatmap
 hyperparameter
 hyperparameters
@@ -21,7 +23,9 @@ increasement
 Inisghts
 Jupyter
 Kaggle
-kundayi
+Kundayi
+Liu
+longhuang
 MTD
 Nenural
 NEWFLYER
@@ -31,7 +35,7 @@ pract
 pre
 predicator
 preprocess
-preprocessing
+Preprocessing
 Regressor
 Reliablity
 relu
@@ -49,6 +53,10 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
-XXXX
+Workshifts
+Yanhan
+YanhanL
 Yujing
+yujingl
+Zhang
+Zhongshu
