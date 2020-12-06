@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/))
+([permalink](https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/))
 was automatically generated
-from [banyekalaok/cee498report@18449d9](https://github.com/banyekalaok/cee498report/tree/18449d9c9cbe318f9a510c3781191c8524da870f)
+from [banyekalaok/cee498report@e0389ee](https://github.com/banyekalaok/cee498report/tree/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b)
 on December 6, 2020.
 </em></small>
 
@@ -119,7 +119,7 @@ on December 6, 2020.
 
 # Chapter 1. Introduction
 
-As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.
+As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure @fig:wide-image gives an overview of the CUMTD area.
 
 ![
 **CUMTD Route Map**
@@ -130,18 +130,19 @@ Bus operations are complex systems as they function at the intersection of trans
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip). 
 
 ## 1.2 Dataset Overview
-We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.
+We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition. Table @tbl:constant-digits shows the first five data in the dataset 'df_ridership' where we are going to analyze. 
+'df_ridership' dataset shows the ridership situation and has 30171 data points. Its index includes the line number, trip ID and the date, and it has block ID, course ID, pattern name, scheduled start time, scheduled end time, P-stops, M-stops, vehicle ID, vehicle type name, capacity, full capacity, practical capacity, load factor, practical load factor, total boarding number, total alighting number, average load, minimum load, maximum load, passenger miles, and passenger miles factor. In specific, M-stops means that the number of stops at scheduled stop points, P-stops means that the number of stops at scheduled stop points and of unscheduled stops with passenger interaction.
+
 
 | No | Date| Trip| Duty| Line| Block | Course|	Pattern|	Sched. start|	Sched. end|	P-Stops|	M-Stops|	Vehicle|	Veh. type|	Capacity|	Full capacity|	Capacity (pract.)|	EMPTY_1|	Load factor [%]|	Load factor (pract.)[%]|	EMPTY_2|	Total in|	Total out|	Load avg|	Min|	Max|	EMPTY_3|	PM|	PM factor [%]|	Graphic|
 |:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-|1|	8/3/2020|	4214|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 3|	6:43:00|	7:03:00|	0|	3|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		0|	0|	0|	0|	0|	|	0|	0|	|
-|2|	8/3/2020|	22|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 51|	7:03:00|	7:35:00|	5|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	1|	0|	2|	|	7.02|	0|	|
-|3|	8/3/2020|	332|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|4W| 3|	7:40:00|	8:13:00|	4|	53|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		1|	1|	0|	0|	0|	|	0|	0|	|
-|4|	8/3/2020|	30|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|BLUE| 51|	8:17:00|	8:51:00|	8|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	0.6|	0|	2|	|	4.68|	0|	|
-|5|	8/3/2020|	201|		BLUE[V:0001]|	402|	1290495|	[@124.0.137636458@]|4W| 3|	8:51:00|	9:24:00|	7|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		3|	3|	0.5|	0|	2|	|	4.27|	0|	|
+|1|	8/3/2020|	4214|		BLUE[V:0001]|	402|	1290495|	124.0.137636458|BLUE 3|	6:43:00|	7:03:00|	0|	3|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		0|	0|	0|	0|	0|	|	0|	0|	|
+|2|	8/3/2020|	22|		BLUE[V:0001]|	402|	1290495|	124.0.137636458|BLUE 51|	7:03:00|	7:35:00|	5|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	1|	0|	2|	|	7.02|	0|	|
+|3|	8/3/2020|	332|		BLUE[V:0001]|	402|	1290495|	124.0.137636458]|4W 3|	7:40:00|	8:13:00|	4|	53|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		1|	1|	0|	0|	0|	|	0|	0|	|
+|4|	8/3/2020|	30|		BLUE[V:0001]|	402|	1290495|	124.0.137636458]|BLUE 51|	8:17:00|	8:51:00|	8|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		2|	2|	0.6|	0|	2|	|	4.68|	0|	|
+|5|	8/3/2020|	201|		BLUE[V:0001]|	402|	1290495|	124.0.137636458|4W 3|	8:51:00|	9:24:00|	7|	52|	1727|	NEWFLYER(2017)|	0|	0|	0| |		0|	0| |		3|	3|	0.5|	0|	2|	|	4.27|	0|	|
 
-
-Table: Ridershippertrip_PerTrip-AugustWeekdays9-9
+Table: Ridership Per Trip in August Weekdays
 {#tbl:constant-digits}
 
 ## 1.3 Project Objective 
@@ -198,28 +199,14 @@ Then, a pairwise scatter plot is used to show the degree of linearity of the rel
 
 ![correlation heat map](images/eda7.png)
 
-Next, we explore the charateristic of load average in different weekday. We collect the data from Monday to Friday, and find out their total load average and their durations. Figures below are the sum of the load average andtheir durations. 
+As can be seen in figure 8, each day has a very similar distribution, however, Monday and Thursday have some outliers beyond the maximum. This gives some insight and confirms that the number of trips per day are fairly evenly distributed.
 
-![total of load avg in weekdays](images/Load_Avg_weekdays.png)
-![Duration of load avg in weekdays](images/Load_Avg_duration.png)
+**Figure 8. Box plot of duration per day full dataset.**
 
-Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below.
+Figure 14 informs that the a $ trip < 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.
 
-![Load Avg for all buses in average](images/load_avg_in_all_days(average).png){#fig:square-image}
-(Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
-What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.
-
-![Load Avg in each day](images/load_avg_in_each_day.png){#fig:tall-image height=10in}
-
-![Load Avg for each bus line](images/load_avg_in_each_bus_line.png){#fig:tall-image height=10in}
-
-With these comparisons, some takeaways can be summarized as follows:
-
-* There were only a few increasement after semester opened. It shows that the pandemic decreases the students' willingness of taking buses to face-to-face classes.
-* In August, the YELLOW, RED, LAVENDER, GREEN and GREY buses have relatively high passengers.
-* The Illini routes changed the most after semester started, we believe one of the reasons is that students who live in One North or One South must take buses to the classroom.
-
+**Figure 14. Bar plot of duration against P-stops filtered dataset.**
 
 ## EDA Results Summary
 
@@ -302,8 +289,6 @@ Models learn best and fasted when the data is scaled, most commonly between valu
 
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
-![](images/z-score.png)
-
 **Figure x. Z-score Normalization**
 
 ### Converting Categorical Features to Numerical
@@ -313,8 +298,6 @@ To allow the model to learn from the categorical features, they need to be conve
 ### One-hot coding
 
 Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. **Figure x** is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.
-
-![](images/onehot.png)
 
 **Figure x. One-hot Coding Example**
 
@@ -382,10 +365,6 @@ Our best mode is a type of neural network model developed by Yujing using the sk
 
 *	Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. 
 
-![](images/GradientBoosting.png)
-
-**Figure x. Gradient Boosting Algorithm**
-
 The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the **grid search** method.
 *	max_depth: [3, 10]
 *	learning_rate: [0.1, 0.03]
@@ -404,8 +383,6 @@ The following figure shows the predictions against targets. The straight line re
 * If a point falls below this line, then for this input we can know prediction < target.
 
 * The farther the point is from the line, the less accurate the prediction.
-
-![](images/T_P.png)
 
 **Figure x. Predictions VS Targets**
 
