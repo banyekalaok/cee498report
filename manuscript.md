@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/ca9613909414ffdaf12d9f7fa05074f0b1ca227f/))
+([permalink](https://banyekalaok.github.io/cee498report/v/ff93a1306edc36bbc07909ddccc6aa9362abe989/))
 was automatically generated
-from [banyekalaok/cee498report@ca96139](https://github.com/banyekalaok/cee498report/tree/ca9613909414ffdaf12d9f7fa05074f0b1ca227f)
+from [banyekalaok/cee498report@ff93a13](https://github.com/banyekalaok/cee498report/tree/ff93a1306edc36bbc07909ddccc6aa9362abe989)
 on December 6, 2020.
 </em></small>
 
@@ -210,6 +210,8 @@ From the figures, we find that the number of trips are fairly evenly distributed
 Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
 ![Load Avg for all buses in average](images/load_avg_in_all_days(average).png){#fig:square-image}
+
+*Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses*
 
 What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.
 
