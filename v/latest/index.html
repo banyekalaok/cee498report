@@ -59,9 +59,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/4b129001be6fbdf95f4daa23c8d6d7695f125bbb">banyekalaok/cee498report@4b12900</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/20b0160e92edb580c44a7e7c634ce3038afa891e">banyekalaok/cee498report@20b0160</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -120,7 +120,7 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </small></p></li>
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
-<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure <a href="#fig:wide-image">12</a> gives an overview of the CUMTD area.</p>
+<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure <a href="#fig:wide-image">13</a> gives an overview of the CUMTD area.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
 <img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
@@ -519,9 +519,11 @@ The following section summarizes the EDA results that are relevant to the model 
 </figure>
 </div>
 <p>In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in <strong>Figure #</strong>.</p>
+<div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Plot%20in%20overfitting.png" alt="" /><figcaption><strong>Plot in overfitting,optimum, and underfitting.</strong></figcaption>
+<img src="images/Plot%20in%20overfitting.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Plot in overfitting,optimum, and underfitting.</strong></figcaption>
 </figure>
+</div>
 <p>To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model.</p>
 <p>After the optimization as stochastic gradient descent (SGD), take learning rate as 0.1, the RMSE is 0.268, and the R2 score is 0.965.</p>
 <h3 id="most-predictive-model">Most Predictive Model</h3>
