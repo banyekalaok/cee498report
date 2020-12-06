@@ -30,7 +30,7 @@ pract
 pre
 predicator
 preprocess
-Preprocessing
+preprocessing
 Reliablity
 relu
 Rescaling
@@ -40,6 +40,7 @@ Sched
 SGD
 subfield
 Thererfore
+traning
 underfit
 underfitting
 Urbana

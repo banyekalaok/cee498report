@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/))
+([permalink](https://banyekalaok.github.io/cee498report/v/43c99735c28bb431a8d0b84fea686f1519fa7257/))
 was automatically generated
-from [banyekalaok/cee498report@a25d7ad](https://github.com/banyekalaok/cee498report/tree/a25d7ad7b8530970ed7384e93baa6cc289e7fc08)
+from [banyekalaok/cee498report@43c9973](https://github.com/banyekalaok/cee498report/tree/43c99735c28bb431a8d0b84fea686f1519fa7257)
 on December 6, 2020.
 </em></small>
 
@@ -302,9 +302,11 @@ Since most machine learning algorithms require numerical input and output variab
 - The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.
 - Similar logic as above was used to convert the week days using one-hot encoding.
 
-The last step in the setup process was to split the training data into training and validation data. This step is done to minimize the likelihood of creating a model that will over or underfit the data. A split of 70% and 30% between training and validation was used.
+### Cross-validation
 
-## Model Development Process
+In order to flag problems like overfitting or selection bias, we can do the cross-validation. Cross-validation is a technique in which we train our model using the subset of the data-set and then evaluate using the complementary subset of the data-set. This step is done to minimize the likelihood of creating a model that will over or underfit the data. To do the Cross-validation, we should split a part of original traning data as a validation set. In this case, I split the training set into X_train (80% of the original size of train_data) and X_validation (20% of the original size of train_data).
+
+# Chapter 4. Model Development Process
 
 The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.
 
