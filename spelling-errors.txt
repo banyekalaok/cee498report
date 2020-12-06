@@ -17,7 +17,7 @@ GridsearchCV
 hanzhs
 heatmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Illini
 increasement
 Inisghts
@@ -53,7 +53,7 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 Yanhan
 YanhanL
 Yujing

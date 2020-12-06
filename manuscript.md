@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a78f518dc14385c8e7179af9c2ab304b7dbffc91/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/aeaab27be8cee521fc8aca1348a783a26cd65144/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a78f518dc14385c8e7179af9c2ab304b7dbffc91/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/aeaab27be8cee521fc8aca1348a783a26cd65144/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a78f518dc14385c8e7179af9c2ab304b7dbffc91/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/aeaab27be8cee521fc8aca1348a783a26cd65144/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/a78f518dc14385c8e7179af9c2ab304b7dbffc91/))
+([permalink](https://banyekalaok.github.io/cee498report/v/aeaab27be8cee521fc8aca1348a783a26cd65144/))
 was automatically generated
-from [banyekalaok/cee498report@a78f518](https://github.com/banyekalaok/cee498report/tree/a78f518dc14385c8e7179af9c2ab304b7dbffc91)
+from [banyekalaok/cee498report@aeaab27](https://github.com/banyekalaok/cee498report/tree/aeaab27be8cee521fc8aca1348a783a26cd65144)
 on December 6, 2020.
 </em></small>
 
@@ -380,7 +380,7 @@ The neural network model has been taken in our team. As a subfield of machine le
 
 ![
 **Comparison between predictions and targets.**
-](images/Neural_target.png){#fig:wide-image}
+](content/images/Neural_target&prediction.png){#fig:wide-image}
 
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
