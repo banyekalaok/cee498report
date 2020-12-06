@@ -5,7 +5,7 @@ continous
 COVID
 csv
 CUMTD
-dataframe
+Dataframe
 dataset
 datasets
 datetime
@@ -54,7 +54,7 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 Yanhan
 YanhanL
 Yujing

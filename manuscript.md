@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/))
+([permalink](https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/))
 was automatically generated
-from [banyekalaok/cee498report@fae6dcc](https://github.com/banyekalaok/cee498report/tree/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b)
+from [banyekalaok/cee498report@7fddb7b](https://github.com/banyekalaok/cee498report/tree/7fddb7b19a3ff6973a4ad5992ff2331adc366942)
 on December 6, 2020.
 </em></small>
 
@@ -448,7 +448,7 @@ As was shown in chapter 4 the most predictive model was able to predict the load
 
 
 
-## References {.page_break_before}
+
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
