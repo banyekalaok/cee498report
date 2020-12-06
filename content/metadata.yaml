@@ -6,11 +6,34 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: abc
-    name: abc
-    initials: abc
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: abc
-    email: abc@illinois.edu
+  - github: mugabe2
+    name: Kundayi Mugabe
+    initials: KM
     affiliations:
       - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  - github: longhuang-hit
+    name: Long Huang
+    initials: LH
+    affiliations:
+      - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  - github: banyekalaok
+    name: Robert Zhang
+    initials: RZ
+    affiliations:
+      - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  - github: YanhanL
+    name: Yanhan Lin
+    initials: YL
+    affiliations:
+      - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  - github: yujingl2
+    name: Yujing Liu
+    initials: YL
+    affiliations:
+      - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+  - github: hanzhs1225
+    name: Zhongshu Han
+    initials: ZH
+    affiliations:
+      - Department of Civil Engineering, University of Illinois, Champaign-Urbana
+
