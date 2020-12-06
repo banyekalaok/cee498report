@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/))
+([permalink](https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/))
 was automatically generated
-from [banyekalaok/cee498report@c84c139](https://github.com/banyekalaok/cee498report/tree/c84c1399f2c7011b78e02d45ab27cdcc8369958e)
+from [banyekalaok/cee498report@4b12900](https://github.com/banyekalaok/cee498report/tree/4b129001be6fbdf95f4daa23c8d6d7695f125bbb)
 on December 6, 2020.
 </em></small>
 
@@ -233,7 +233,7 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 
 ![
 **Duration of Load Avg**
-](images/Load_Avg_duration.png "Duration")
+](images/Load_Avg_duration.png){#fig:square-image}
 
 Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.
@@ -249,12 +249,12 @@ First, we dropped all the empty columns and columns with categorical values or s
 
 ![
 **correlation heat map**
-](images/eda6.png)
+](images/eda6.png){#fig:square-image}
 
 Then, a pairwise scatter plot is used to show the degree of linearity of the relationship between each feature, which gives us a rough idea as to what kind of model should be used.
 
 ![**correlation heat map**
-](images/eda7.png)
+](images/eda7.png){#fig:wide-image}
 
 Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
@@ -314,8 +314,8 @@ Data in the real world always have few missing values. This phenomena may be due
 
 
 ![
-**Table x Percentage of Missing Value**
-](images/missingvalue.png)
+**Percentage of Missing Value**
+](images/missingvalue.png){#fig:square-image}
 
 
 ### Feature Scaling
@@ -360,13 +360,13 @@ Before building a complex model a baseline model was created that simply returns
 
 ![
 **Illustration of support vector regression model**
-](images/SVR illustration.png)
+](images/SVR illustration.png){#fig:wide-image}
 
 The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.
 
 ![
 **Support vector regression model results**
-](images/SVR Results.png)
+](images/SVR Results.png){#fig:wide-image}
 
 As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.
 
@@ -380,19 +380,19 @@ The neural network model has been taken in our team. As a subfield of machine le
 
 ![
 **Comparison between predictions and targets.**
-](images/Neural  target and prediction.png)
+](images/Neural  target and prediction.png){#fig:wide-image}
 
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
 ![
 **Nenural Network.**
-](images/Neural network.png)
+](images/Neural network.png){#fig:wide-image}
 
 When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in **Figure #**. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
 
 ![
 **Weight correction.**
-](images/Weight correction.png)
+](images/Weight correction.png){#fig:wide-image}
 
 In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in **Figure #**.
 
