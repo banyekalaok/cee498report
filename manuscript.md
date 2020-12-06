@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/58d5a141fc03bba2ad2f251612efeff2b66099c1/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/84c98229e937ce3e9254514ab8d88d808d902cc3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/58d5a141fc03bba2ad2f251612efeff2b66099c1/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/84c98229e937ce3e9254514ab8d88d808d902cc3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/58d5a141fc03bba2ad2f251612efeff2b66099c1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/84c98229e937ce3e9254514ab8d88d808d902cc3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/58d5a141fc03bba2ad2f251612efeff2b66099c1/))
+([permalink](https://banyekalaok.github.io/cee498report/v/84c98229e937ce3e9254514ab8d88d808d902cc3/))
 was automatically generated
-from [banyekalaok/cee498report@58d5a14](https://github.com/banyekalaok/cee498report/tree/58d5a141fc03bba2ad2f251612efeff2b66099c1)
+from [banyekalaok/cee498report@84c9822](https://github.com/banyekalaok/cee498report/tree/84c98229e937ce3e9254514ab8d88d808d902cc3)
 on December 6, 2020.
 </em></small>
 
@@ -369,7 +369,7 @@ Our best mode is a type of neural network model developed by Yujing using the sk
 
 *	Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. 
 
-![](images/Gradient Boosting Algorithm.png)
+![](images/GradientBoosting.png)
 
 **Figure x. Gradient Boosting Algorithm**
 

@@ -12,7 +12,7 @@ dataset
 datasets
 datetime
 EDA
-explaratory
+Explaratory
 GradientBoostingRegressor
 GridsearchCV
 heatmap
@@ -33,7 +33,7 @@ pract
 pre
 predicator
 preprocess
-preprocessing
+Preprocessing
 Regressor
 Reliablity
 relu
@@ -52,6 +52,6 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX
 Yujing
