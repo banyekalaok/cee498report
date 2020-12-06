@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/44fb404a9bbb1b3d19054e8d7c0493ecc97692d9">banyekalaok/cee498report@44fb404</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/e416203527c5927b5e72387b7603d829a34c9685">banyekalaok/cee498report@e416203</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -87,8 +87,9 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 <img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
 </figure>
 </div>
-<h2 id="background">1.1 Background</h2>
-<p>Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
+<p>=======
+## 1.1 Background
+Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
 <h2 id="dataset-overview">1.2 Dataset Overview</h2>
 <p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.</p>
@@ -345,7 +346,9 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 </ol>
 <h2 id="data-tidying">Data Tidying</h2>
 <h3 id="independent-variables">Independent Variables</h3>
-<p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
+<p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target ‘Load avg’, which gives us an idea which features might be the most predictive.</p>
+<h3 id="correlation-heat-map">correlation heat map</h3>
+<p>The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
 <p><strong>Figure 1. Trip distribution per weekday</strong></p>
 <p>Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.</p>
