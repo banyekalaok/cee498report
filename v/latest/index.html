@@ -59,9 +59,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/7fddb7b19a3ff6973a4ad5992ff2331adc366942/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/c84c1399f2c7011b78e02d45ab27cdcc8369958e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/7fddb7b19a3ff6973a4ad5992ff2331adc366942">banyekalaok/cee498report@7fddb7b</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/c84c1399f2c7011b78e02d45ab27cdcc8369958e">banyekalaok/cee498report@c84c139</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -388,9 +388,11 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <h3 id="independent-variables">Independent Variables</h3>
 <p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form.
 The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
+<div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/Load_Avg_weekdays.png" alt="" /><figcaption><strong>Load Avg in weekdays</strong></figcaption>
+<img src="images/Load_Avg_weekdays.png" alt="" /><figcaption><span>Figure 2:</span> <strong>Load Avg in weekdays</strong></figcaption>
 </figure>
+</div>
 <figure>
 <img src="images/Load_Avg_duration.png" alt="" /><figcaption><strong>Duration of Load Avg</strong></figcaption>
 </figure>
@@ -410,7 +412,7 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use <a href="http://mtd.org/maps-and-schedules/routes/">Number of Routes’ Names in CUMTD</a> to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses)</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/load_avg_in_all_days(average).png" alt="" /><figcaption><span>Figure 2:</span> <strong>Load Avg for all buses in average</strong></figcaption>
+<img src="images/load_avg_in_all_days(average).png" alt="" /><figcaption><span>Figure 3:</span> <strong>Load Avg for all buses in average</strong></figcaption>
 </figure>
 </div>
 <p><em>Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses</em></p>
