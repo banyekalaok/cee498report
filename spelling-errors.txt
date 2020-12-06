@@ -12,6 +12,7 @@ datasets
 datetime
 EDA
 explaratory
+heatmap
 hyperparameter
 hyperparameters
 Inisghts
@@ -35,5 +36,5 @@ underfit
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX
