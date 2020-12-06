@@ -1,5 +1,4 @@
 alightings
-AugustWeekdays
 boardings
 Champaign
 consdieration
@@ -8,16 +7,17 @@ COVID
 csv
 CUMTD
 dataframe
-dataset
+Dataset
 datasets
 datetime
+df
 EDA
 Explaratory
 GradientBoostingRegressor
 GridsearchCV
 heatmap
 hyperparameter
-hyperparameters
+Hyperparameters
 Inisghts
 Jupyter
 Kaggle
@@ -28,7 +28,6 @@ Nenural
 NEWFLYER
 overfitting
 perditions
-PerTrip
 pract
 pre
 predicator
@@ -38,7 +37,6 @@ Regressor
 Reliablity
 relu
 Rescaling
-Ridershippertrip
 RMSE
 Sched
 serval
@@ -52,6 +50,6 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX
 Yujing
