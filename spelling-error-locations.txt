@@ -91,8 +91,11 @@ content/01.abstract.md:227:underfitting
 content/01.abstract.md:231:RMSE
 content/01.abstract.md:231:SGD
 content/01.abstract.md:235:hyperparameter
+content/01.abstract.md:235:kundayi
 content/01.abstract.md:235:relu
-content/01.abstract.md:239:consdieration
-content/01.abstract.md:241:pre
-content/01.abstract.md:242:Reliablity
-content/01.abstract.md:242:Thererfore
+content/01.abstract.md:237:sklearn
+content/01.abstract.md:237:Yujing
+content/01.abstract.md:248:consdieration
+content/01.abstract.md:250:pre
+content/01.abstract.md:251:Reliablity
+content/01.abstract.md:251:Thererfore

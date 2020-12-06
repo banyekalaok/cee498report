@@ -8,17 +8,18 @@ COVID
 csv
 CUMTD
 dataframe
-dataset
+Dataset
 datasets
 datetime
 EDA
-Explaratory
+explaratory
 heatmap
 hyperparameter
 hyperparameters
 Inisghts
 Jupyter
 Kaggle
+kundayi
 MAPE
 MTD
 Nenural
@@ -30,7 +31,7 @@ pract
 pre
 predicator
 preprocess
-preprocessing
+Preprocessing
 Reliablity
 relu
 Rescaling
@@ -39,6 +40,7 @@ RMSE
 Sched
 serval
 SGD
+sklearn
 subfield
 Thererfore
 traning
@@ -47,5 +49,6 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX
+Yujing
