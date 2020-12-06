@@ -7,7 +7,7 @@ COVID
 csv
 CUMTD
 dataframe
-Dataset
+dataset
 datasets
 datetime
 df
@@ -17,7 +17,7 @@ GradientBoostingRegressor
 GridsearchCV
 heatmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Inisghts
 Jupyter
 Kaggle
