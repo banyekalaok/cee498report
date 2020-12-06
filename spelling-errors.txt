@@ -12,12 +12,12 @@ dataset
 datasets
 datetime
 EDA
-Explaratory
+explaratory
 GradientBoostingRegressor
 GridsearchCV
 heatmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Inisghts
 Jupyter
 Kaggle
