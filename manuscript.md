@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c6514bc71e4f2b159d4079658eec2662e384cd14/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/943e5d764f0ec2a7e27c8e931625e7718b9669df/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c6514bc71e4f2b159d4079658eec2662e384cd14/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/943e5d764f0ec2a7e27c8e931625e7718b9669df/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c6514bc71e4f2b159d4079658eec2662e384cd14/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/943e5d764f0ec2a7e27c8e931625e7718b9669df/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/c6514bc71e4f2b159d4079658eec2662e384cd14/))
+([permalink](https://banyekalaok.github.io/cee498report/v/943e5d764f0ec2a7e27c8e931625e7718b9669df/))
 was automatically generated
-from [banyekalaok/cee498report@c6514bc](https://github.com/banyekalaok/cee498report/tree/c6514bc71e4f2b159d4079658eec2662e384cd14)
+from [banyekalaok/cee498report@943e5d7](https://github.com/banyekalaok/cee498report/tree/943e5d764f0ec2a7e27c8e931625e7718b9669df)
 on December 6, 2020.
 </em></small>
 
@@ -289,6 +289,8 @@ Models learn best and fasted when the data is scaled, most commonly between valu
 
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
+![](images/z-score.png)
+
 **Figure x. Z-score Normalization**
 
 ### Converting Categorical Features to Numerical
@@ -298,6 +300,8 @@ To allow the model to learn from the categorical features, they need to be conve
 ### One-hot coding
 
 Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. **Figure x** is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.
+
+![](images/onehot.png)
 
 **Figure x. One-hot Coding Example**
 
@@ -365,6 +369,10 @@ Our best mode is a type of neural network model developed by Yujing using the sk
 
 *	Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. 
 
+![](images/Gradient Boosting Algorithm.png)
+
+**Figure x. Gradient Boosting Algorithm**
+
 The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the **grid search** method.
 *	max_depth: [3, 10]
 *	learning_rate: [0.1, 0.03]
@@ -383,6 +391,8 @@ The following figure shows the predictions against targets. The straight line re
 * If a point falls below this line, then for this input we can know prediction < target.
 
 * The farther the point is from the line, the less accurate the prediction.
+
+![](images/T_P.png)
 
 **Figure x. Predictions VS Targets**
 
