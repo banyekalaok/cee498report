@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167/))
+([permalink](https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/))
 was automatically generated
-from [banyekalaok/cee498report@9bc7f2e](https://github.com/banyekalaok/cee498report/tree/9bc7f2e7c13dd3c2e00495cc3115c02a9a58b167)
+from [banyekalaok/cee498report@7ef8f44](https://github.com/banyekalaok/cee498report/tree/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c)
 on December 6, 2020.
 </em></small>
 
@@ -123,10 +123,8 @@ As part of the course project for the class, project group 7 acquired bus riders
 
 ![
 **CUMTD Route Map**
-](images/Figure1.png "CUMTD Route Map")
+](images/Figure1.png "CUMTD Route Map"){#fig:wide-image}
 
-
-=======
 ## 1.1 Background
 Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip). 
