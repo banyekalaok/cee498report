@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/66b27ef8725deffd12d938cf59e60eefbaa2c584/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/5f42a64c6bc5bc224ff46db3fce3a84108ed83be">banyekalaok/cee498report@5f42a64</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/66b27ef8725deffd12d938cf59e60eefbaa2c584">banyekalaok/cee498report@66b27ef</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -411,16 +411,6 @@ The following section summarizes the EDA results that are relevant to the model 
 <li>The start and end times are converted such that they reflect times and the difference between the start and end time is stored in the data sets as a <strong>‘duration’</strong>.</li>
 </ul>
 <p>The following paragraphs describe the particular ways the training data was cleaned to result in meaningful predictive models. The 2 main ways feature engineering will be conducted on this data set are: 1) The developers knowledge on the dataset (as presented in the EDA), and 2) assessing the statistics on the dataset.</p>
-<p>Based on the EDA, we know that the following features have no value to the model we’ll be developing. Therefore, the following features can be removed from the data set:</p>
-<ul>
-<li><strong>Duty</strong>, <strong>EMPTY_1</strong>, <strong>EMPTY_2</strong>, <strong>EMPTY_3</strong> and <strong>Graphic</strong> - Features with blank entries and no description in the manual on the data set.</li>
-<li><strong>Capacity</strong>, <strong>Full capacity</strong>, <strong>Capacity (pract.)</strong>, <strong>Load factor [%]</strong>, <strong>Load factor (pract.)[%]</strong> and the <strong>PM factor [%]</strong> columns were all 0’s.</li>
-</ul>
-<p>The EDA also revealed that the following data sets had numbers that didn’t actually correspond to a numerical value (i.e., the numbers are codes that have no value to the model development effort).</p>
-<ul>
-<li><strong>No (train)/index (test)</strong>, <strong>Trip</strong>,<strong>Block</strong>, <strong>Course</strong>, <strong>Pattern</strong>, and <strong>Vehicle</strong>.</li>
-<li><strong>Date</strong>, <strong>Sched. start</strong>, and <strong>Sched. end</strong> - They were used to determine the schedules, day and duration. From here on, they no longer have model development value.</li>
-</ul>
 <h2 id="data-preprocessing">Data Preprocessing</h2>
 <p>Data preprocessing is an indispensable step in machine learning. It is important to preprocess the data which should be prior to model development since the quality of the data can determine the final performance of our model.</p>
 <h3 id="handing-missing-data">Handing Missing Data</h3>
@@ -451,8 +441,15 @@ The following section summarizes the EDA results that are relevant to the model 
 <h1 id="chapter-4.-model-development-process">Chapter 4. Model Development Process</h1>
 <p>The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.</p>
 <h3 id="establish-a-baseline-model">Establish a Baseline Model</h3>
-<p>Before building a trainable model we’ll create a baseline that simply returns the load average.</p>
-<p>As expected, the baseline model had a high root mean square error (RMSE) and mean absolute percentage error (MAPE) on both the training and validation data. The next section assesses if a dense model can produce a better model with lower metrics.</p>
+<p>Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model’s coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.</p>
+<figure>
+<img src="images/SVR%20illustration.png" alt="" /><figcaption>Illustration of support vector regression model</figcaption>
+</figure>
+<p>The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.</p>
+<figure>
+<img src="images/SVR%20Results.png" alt="" /><figcaption>Support vector regression model results</figcaption>
+</figure>
+<p>As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.</p>
 <h3 id="develop-a-more-complex-model">Develop a More Complex Model</h3>
 <p>As can be seen, the dense linear model results in better (lower) metrics than the baseline model. However, the improvement in the model performance is not that significant. The next section assesses if a dense non-linear model can produce a better model with lower metrics.</p>
 <h3 id="neural-network-model">Neural Network Model</h3>
