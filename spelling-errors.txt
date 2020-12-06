@@ -5,7 +5,7 @@ continous
 COVID
 csv
 CUMTD
-dataframe
+Dataframe
 dataset
 datasets
 datetime

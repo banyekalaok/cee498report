@@ -59,9 +59,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c14366f6b5a5382818cde5489158e5fc087e205f/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c14366f6b5a5382818cde5489158e5fc087e205f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c14366f6b5a5382818cde5489158e5fc087e205f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/c14366f6b5a5382818cde5489158e5fc087e205f/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/c14366f6b5a5382818cde5489158e5fc087e205f">banyekalaok/cee498report@c14366f</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12">banyekalaok/cee498report@1c7ac6b</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -120,7 +120,7 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </small></p></li>
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
-<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure <a href="#fig:wide-image">13</a> gives an overview of the CUMTD area.</p>
+<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure <a href="#fig:wide-image">16</a> gives an overview of the CUMTD area.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
 <img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
@@ -467,12 +467,20 @@ The following section summarizes the EDA results that are relevant to the model 
 <p><strong>Figure #. Comparison of key predictive variables against load average.</strong></p>
 <h4 id="standardization-z-score-normalization">Standardization (Z-score Normalization)</h4>
 <p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
-<p><strong>Figure x. Z-score Normalization</strong></p>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="images/z-score.png" alt="" /><figcaption><span>Figure 8:</span> <strong>Z-score Normalization</strong></figcaption>
+</figure>
+</div>
 <h3 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h3>
 <p>To allow the model to learn from the categorical features, they need to be converted to numerical features. The following section details how the conversions were conducted.</p>
 <h3 id="one-hot-coding">One-hot coding</h3>
 <p>Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. <strong>Figure x</strong> is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.</p>
-<p><strong>Figure x. One-hot Coding Example</strong></p>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="images/onehot.png" alt="" /><figcaption><span>Figure 9:</span> <strong>One-hot Coding Example</strong></figcaption>
+</figure>
+</div>
 <ul>
 <li>The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.</li>
 <li>The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.</li>
@@ -487,13 +495,13 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model’s coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/SVR%20illustration.png" alt="" /><figcaption><span>Figure 8:</span> <strong>Illustration of support vector regression model</strong></figcaption>
+<img src="images/SVR%20illustration.png" alt="" /><figcaption><span>Figure 10:</span> <strong>Illustration of support vector regression model</strong></figcaption>
 </figure>
 </div>
 <p>The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/SVR%20Results.png" alt="" /><figcaption><span>Figure 9:</span> <strong>Support vector regression model results</strong></figcaption>
+<img src="images/SVR%20Results.png" alt="" /><figcaption><span>Figure 11:</span> <strong>Support vector regression model results</strong></figcaption>
 </figure>
 </div>
 <p>As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.</p>
@@ -503,25 +511,25 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the <strong>Figure #</strong>. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Neural_target.png" alt="" /><figcaption><span>Figure 10:</span> <strong>Comparison between predictions and targets.</strong></figcaption>
+<img src="images/Neural_target.png" alt="" /><figcaption><span>Figure 12:</span> <strong>Comparison between predictions and targets.</strong></figcaption>
 </figure>
 </div>
 <p>A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in <strong>Figure #</strong>. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Neural_network.png" alt="" /><figcaption><span>Figure 11:</span> <strong>Neural Network.</strong></figcaption>
+<img src="images/Neural_network.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Neural Network.</strong></figcaption>
 </figure>
 </div>
 <p>When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in <strong>Figure #</strong>. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Weight_correction.png" alt="" /><figcaption><span>Figure 12:</span> <strong>Weight correction.</strong></figcaption>
+<img src="images/Weight_correction.png" alt="" /><figcaption><span>Figure 14:</span> <strong>Weight correction.</strong></figcaption>
 </figure>
 </div>
 <p>In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in <strong>Figure #</strong>.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Plot_in_overfitting.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Plot in overfitting,optimum, and underfitting.</strong></figcaption>
+<img src="images/Plot_in_overfitting.png" alt="" /><figcaption><span>Figure 15:</span> <strong>Plot in overfitting,optimum, and underfitting.</strong></figcaption>
 </figure>
 </div>
 <p>To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model.</p>
@@ -533,6 +541,11 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><p>Boosting models try predictors sequentially, and the subsequent model attempts to fix the errors of its predecessor.</p></li>
 <li><p>Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error.</p></li>
 </ul>
+<div id="fig:wide-image" class="fignos">
+<figure>
+<img src="images/GradientBoosting.png" alt="" /><figcaption><span>Figure 16:</span> <strong>Figure x. Gradient Boosting Algorithm</strong></figcaption>
+</figure>
+</div>
 <p>The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the <strong>grid search</strong> method.
 * max_depth: [3, 10]
 * learning_rate: [0.1, 0.03]
@@ -546,7 +559,11 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><p>If a point falls below this line, then for this input we can know prediction &lt; target.</p></li>
 <li><p>The farther the point is from the line, the less accurate the prediction.</p></li>
 </ul>
-<p><strong>Figure x. Predictions VS Targets</strong></p>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="images/T_P.png" alt="" /><figcaption><span>Figure 17:</span> <strong>Figure x. Predictions VS Targets</strong></figcaption>
+</figure>
+</div>
 <h1 id="chapter-5.-conclusions">Chapter 5. Conclusions</h1>
 <p>As was shown in chapter 4 the most predictive model was able to predict the load average with 0.98 accuracy. Some factors need to be taken into consdieration about this process:</p>
 <ol type="1">
