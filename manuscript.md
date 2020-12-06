@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/4b129001be6fbdf95f4daa23c8d6d7695f125bbb/))
+([permalink](https://banyekalaok.github.io/cee498report/v/20b0160e92edb580c44a7e7c634ce3038afa891e/))
 was automatically generated
-from [banyekalaok/cee498report@4b12900](https://github.com/banyekalaok/cee498report/tree/4b129001be6fbdf95f4daa23c8d6d7695f125bbb)
+from [banyekalaok/cee498report@20b0160](https://github.com/banyekalaok/cee498report/tree/20b0160e92edb580c44a7e7c634ce3038afa891e)
 on December 6, 2020.
 </em></small>
 
@@ -380,7 +380,7 @@ The neural network model has been taken in our team. As a subfield of machine le
 
 ![
 **Comparison between predictions and targets.**
-](images/Neural  target and prediction.png){#fig:wide-image}
+](images/Neural target and prediction.png){#fig:wide-image}
 
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
@@ -398,7 +398,7 @@ In the neural network model, find an optimum way to weight correction is crucial
 
 ![
 **Plot in overfitting,optimum, and underfitting.**
-](images/Plot in overfitting.png)
+](images/Plot in overfitting.png){#fig:wide-image}
 
 To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model. 
 
