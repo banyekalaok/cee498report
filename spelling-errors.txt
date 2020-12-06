@@ -12,7 +12,7 @@ dataset
 datasets
 datetime
 EDA
-explaratory
+Explaratory
 heatmap
 hyperparameter
 hyperparameters
@@ -30,7 +30,7 @@ pract
 pre
 predicator
 preprocess
-Preprocessing
+preprocessing
 Reliablity
 relu
 Rescaling
@@ -47,5 +47,5 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX

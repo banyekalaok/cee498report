@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c/))
+([permalink](https://banyekalaok.github.io/cee498report/v/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2/))
 was automatically generated
-from [banyekalaok/cee498report@7ef8f44](https://github.com/banyekalaok/cee498report/tree/7ef8f447e449f1c86a561ac781b42f7c2b0ef54c)
+from [banyekalaok/cee498report@a0a9ad3](https://github.com/banyekalaok/cee498report/tree/a0a9ad3d3d8f6521351985e730fc4fc81bd7b3d2)
 on December 6, 2020.
 </em></small>
 
@@ -128,6 +128,7 @@ As part of the course project for the class, project group 7 acquired bus riders
 ## 1.1 Background
 Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip). 
+A lot of cities are currently implementing congestion pricing to ease traffic congestion or decrease pollution. But what is congestion pricing and why does it is it effective? 
 
 ## 1.2 Dataset Overview
 We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.
