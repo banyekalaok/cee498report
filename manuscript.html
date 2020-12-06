@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/66d546d8aa052fa0afed6a1589f28f1d5dec3405">banyekalaok/cee498report@66d546d</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/a25d7ad7b8530970ed7384e93baa6cc289e7fc08">banyekalaok/cee498report@a25d7ad</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -420,9 +420,12 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1).</p>
 <h4 id="standardization-z-score-normalization">Standardization (Z-score Normalization)</h4>
 <p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
-<p><span class="math display">\[x^&#39;=\frac{x-\overline{x}}{\sigma}\]</span></p>
-<h4 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h4>
+<p><strong>Figure x. Z-score Normalization</strong></p>
+<h3 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h3>
 <p>To allow the model to learn from the categorical features, they need to be converted to numerical features. The following section details how the conversions were conducted.</p>
+<h3 id="one-hot-coding">One-hot coding</h3>
+<p>Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. <strong>Figure x</strong> is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.</p>
+<p><strong>Figure x. One-hot Coding Example</strong></p>
 <ul>
 <li>The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.</li>
 <li>The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.</li>

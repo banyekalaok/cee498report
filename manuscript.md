@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/))
+([permalink](https://banyekalaok.github.io/cee498report/v/a25d7ad7b8530970ed7384e93baa6cc289e7fc08/))
 was automatically generated
-from [banyekalaok/cee498report@66d546d](https://github.com/banyekalaok/cee498report/tree/66d546d8aa052fa0afed6a1589f28f1d5dec3405)
+from [banyekalaok/cee498report@a25d7ad](https://github.com/banyekalaok/cee498report/tree/a25d7ad7b8530970ed7384e93baa6cc289e7fc08)
 on December 6, 2020.
 </em></small>
 
@@ -286,11 +286,17 @@ Models learn best and fasted when the data is scaled, most commonly between valu
 
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
-$$x^'=\frac{x-\overline{x}}{\sigma}$$
+**Figure x. Z-score Normalization**
 
-#### Converting Categorical Features to Numerical
+### Converting Categorical Features to Numerical
 
 To allow the model to learn from the categorical features, they need to be converted to numerical features. The following section details how the conversions were conducted.
+
+### One-hot coding
+
+Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. **Figure x** is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.
+
+**Figure x. One-hot Coding Example**
 
 - The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.
 - The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.
