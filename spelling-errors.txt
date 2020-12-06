@@ -8,7 +8,7 @@ COVID
 csv
 CUMTD
 dataframe
-Dataset
+dataset
 datasets
 datetime
 EDA
@@ -33,7 +33,7 @@ pract
 pre
 predicator
 preprocess
-Preprocessing
+preprocessing
 Regressor
 Reliablity
 relu
@@ -52,6 +52,6 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX
 Yujing

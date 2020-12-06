@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/9c27d890720aba8aa82a116c7870be69af7f5092/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c0c03414ce239456e940cddbcf711f4f2acde009/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9c27d890720aba8aa82a116c7870be69af7f5092/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c0c03414ce239456e940cddbcf711f4f2acde009/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/9c27d890720aba8aa82a116c7870be69af7f5092/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c0c03414ce239456e940cddbcf711f4f2acde009/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/9c27d890720aba8aa82a116c7870be69af7f5092/))
+([permalink](https://banyekalaok.github.io/cee498report/v/c0c03414ce239456e940cddbcf711f4f2acde009/))
 was automatically generated
-from [banyekalaok/cee498report@9c27d89](https://github.com/banyekalaok/cee498report/tree/9c27d890720aba8aa82a116c7870be69af7f5092)
+from [banyekalaok/cee498report@c0c0341](https://github.com/banyekalaok/cee498report/tree/c0c03414ce239456e940cddbcf711f4f2acde009)
 on December 6, 2020.
 </em></small>
 
@@ -256,6 +256,10 @@ Data preprocessing is an indispensable step in machine learning. It is important
 ### Handing Missing Data
 
 Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. **Table x** shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing 'Trip' values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.
+
+**Table x** Percentage of Missing Value
+
+![](images/missingvalue.png)
 
 
 ### Feature Scaling
