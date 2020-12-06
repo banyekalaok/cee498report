@@ -8,11 +8,11 @@ COVID
 csv
 CUMTD
 dataframe
-dataset
+Dataset
 datasets
 datetime
 EDA
-Explaratory
+explaratory
 GradientBoostingRegressor
 GridsearchCV
 heatmap
@@ -52,6 +52,6 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX
 Yujing
