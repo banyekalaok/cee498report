@@ -28,9 +28,11 @@ PerTrip
 pract
 pre
 predicator
-Preprocessing
+preprocess
+preprocessing
 Reliablity
 relu
+Rescaling
 Ridershippertrip
 RMSE
 Sched
@@ -42,5 +44,5 @@ underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX

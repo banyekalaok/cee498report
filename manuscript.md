@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/))
+([permalink](https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/))
 was automatically generated
-from [banyekalaok/cee498report@5d06ccc](https://github.com/banyekalaok/cee498report/tree/5d06ccc8ad04b6f86aea336749e36464227cec8c)
+from [banyekalaok/cee498report@0916884](https://github.com/banyekalaok/cee498report/tree/09168846bc73280d19c8815b077ac059ce888939)
 on December 6, 2020.
 </em></small>
 
@@ -226,14 +226,11 @@ The following features were identified to have strong predictive ability, indica
 * Max (0.90).
 * PM (0.85).
 
-# Chapter 3. Data Preprocessing
+# Chapter 3. Feature Engineering and Data Preprocessing
 
-The content in chapter 3 is broken down into the following 2 sections:
+## Feature Engineering
 
-1. **Data Setup and Feature Engineering** - This section details the pre-processing that took place prior to model development.
-2. **Model Development** - This section describes the step-by-step methodology used to determine the best model to predict the load averages.
-
-## Data Setup and Feature Engineering
+Feature engineering is a process to select features that can improve the performance of prediction model from raw data based on domain knowledge. Removing features that are not relevant to the predictions or contribute specifically to the predictions will make your model's work easier and faster to learn.
 
 Similar steps are taken in this section as were taken in the EDA process. However, the overall goal here was to clean the data in such a way that it produces informative, predictive models with minimal bias and over- or under-fitting. Therefore:
 
@@ -253,7 +250,20 @@ The EDA also revealed that the following data sets had numbers that didn't actua
 * **No (train)/index (test)**, **Trip**,**Block**, **Course**, **Pattern**, and **Vehicle**.
 * **Date**, **Sched. start**, and **Sched. end** - They were used to determine the schedules, day and duration. From here on, they no longer have model development value.
 
+## Data Preprocessing
+
+Data preprocessing is an indispensable step in machine learning. It is important to preprocess the data which should be prior to model development since the quality of the data can determine the final performance of our model.
+
+### Handing Missing Data
+
+Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. **Table x** shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing 'Trip' values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.
+
+
 ### Feature Scaling
+
+Feature scaling is a method used to standardize independent variables or feature ranges of data. Since the value range of some original data is very different, the model will give more weight to the feature with large values in the learning process. However, in fact, the weight of each feature should not be considered in this way. In some machine learning algorithms, the objective function cannot work properly without normalization.
+
+#### Rescaling (min-max normalization)
 
 The purpose of feature scaling is to transform the data into common scales. 
 
@@ -270,9 +280,12 @@ Before scaling the data, lets view some data statistics to refresh our memory on
 
 From the statistics above, notice that the minimum load (**Min**) has a very low correlation with the load average, therefore, min has low predictive value. Also, notice that **total in** and **total out** are strongly correlated, implying that the sum of boardings during a trip is almost always the same as the sum of alightings. Therefore, only 1 of these 2 features are needed. The **total out** will not be considered in the model development effort.
 
-#### Scaling Numerical Features
-
 Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1). 
+
+#### Standardization (Z-score Normalization)
+
+In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
+
 
 #### Converting Categorical Features to Numerical
 
