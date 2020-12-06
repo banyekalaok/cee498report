@@ -59,9 +59,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/110a095e748812355590f51234d78951d0b2010c/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/110a095e748812355590f51234d78951d0b2010c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/110a095e748812355590f51234d78951d0b2010c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/110a095e748812355590f51234d78951d0b2010c/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/110a095e748812355590f51234d78951d0b2010c">banyekalaok/cee498report@110a095</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/fae6dcc9c2cb457fa20e90138c7e410a667d0f9b">banyekalaok/cee498report@fae6dcc</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -373,6 +373,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <ol type="1">
 <li><strong>Introduction</strong> - The current chapter which introduces the project scope and objective.</li>
 <li><strong>Exploratory Data Analysis</strong> - This chapter details the EDA process, findings and key takeaways.</li>
+<li><strong>Data Preprocessing</strong> - This chapter is about preprocessing the data which should be prior to model development.</li>
 <li><strong>Model Development</strong> - This section describes the step-by-step methodology used to determine the best model to predict the load averages.</li>
 <li><strong>Conclusions</strong> - This section briefly highlights the key takeaways from the model development efforts and the report in general.</li>
 </ol>
@@ -383,50 +384,44 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <li><p><strong>Investigating Data Insights</strong> - This section details the bus data EDA process and outcomes.</p></li>
 <li><p><strong>EDA Summary and Conclusions</strong> - This section summarizes the key findings and conclusions from the EDA.</p></li>
 </ol>
-<h2 id="data-tidying">Data Tidying</h2>
+<h2 id="data-tidying">2.1 Data Tidying</h2>
 <h3 id="independent-variables">Independent Variables</h3>
 <p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form.
 The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
-<p><img src="images/Load_Avg_weekdays.png" alt="Load Avg in weekdays" />
-<img src="images/Load_Avg_duration.png" alt="Duration of Load Avg" /></p>
+<figure>
+<img src="images/Load_Avg_weekdays.png" alt="" /><figcaption><strong>Load Avg in weekdays</strong></figcaption>
+</figure>
+<figure>
+<img src="images/Load_Avg_duration.png" alt="" /><figcaption><strong>Duration of Load Avg</strong></figcaption>
+</figure>
 <p>Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.</p>
 <h3 id="dependent-variables">Dependent Variables</h3>
 <p>One of the unique challenges faced in this data was what to do with the time data (schedule start and end times). Firstly, the data was provided as strings, therefore, they needed to be converted to datetime format. Secondly, some of the data entries that were not on the conventional 24-hr time format, i.e., some times were between 24:00 and 26:00 hours. This is likely because the timestamps represent the bus driver workshifts. Workshifts are easier to monitor and track on a continous scale from clock-in to clock-out than to break-up because of the start of a new day. A function was created to correct the time to be in the 24-hr format then the times were used to determine the duration of a trip (schedule end time - schedule start time).</p>
-<h2 id="investigating-data-inisghts">Investigating Data Inisghts</h2>
+<h2 id="investigating-data-inisghts">2.2 Investigating Data Inisghts</h2>
 <p>First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target ‘Load avg’, which gives us an idea which features might be the most predictive and which features we should drop because of a poor correlation with our target.</p>
 <figure>
-<img src="images/eda6.png" alt="" /><figcaption>correlation heat map</figcaption>
+<img src="images/eda6.png" alt="" /><figcaption><strong>correlation heat map</strong></figcaption>
 </figure>
 <p>Then, a pairwise scatter plot is used to show the degree of linearity of the relationship between each feature, which gives us a rough idea as to what kind of model should be used.</p>
 <figure>
-<img src="images/eda7.png" alt="" /><figcaption>correlation heat map</figcaption>
+<img src="images/eda7.png" alt="" /><figcaption><strong>correlation heat map</strong></figcaption>
 </figure>
 <p>Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use <a href="http://mtd.org/maps-and-schedules/routes/">Number of Routes’ Names in CUMTD</a> to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses)</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/load_avg_in_all_days(average).png" alt="" /><figcaption><span>Figure 2:</span> Load Avg for all buses in average</figcaption>
+<img src="images/load_avg_in_all_days(average).png" alt="" /><figcaption><span>Figure 2:</span> <strong>Load Avg for all buses in average</strong></figcaption>
 </figure>
 </div>
 <p><em>Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses</em></p>
-<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.</p>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="images/load_avg_in_each_day.png" style="height:10in" alt="" /><figcaption><span>Figure 3:</span> Load Avg in each day</figcaption>
-</figure>
-</div>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="images/load_avg_in_each_bus_line.png" style="height:10in" alt="" /><figcaption><span>Figure 4:</span> Load Avg for each bus line</figcaption>
-</figure>
-</div>
+<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together.</p>
 <p>With these comparisons, some takeaways can be summarized as follows:</p>
 <ul>
 <li>There were only a few increasement after semester opened. It shows that the pandemic decreases the students’ willingness of taking buses to face-to-face classes.</li>
 <li>In August, the YELLOW, RED, LAVENDER, GREEN and GREY buses have relatively high passengers.</li>
 <li>The Illini routes changed the most after semester started, we believe one of the reasons is that students who live in One North or One South must take buses to the classroom.</li>
 </ul>
-<h2 id="eda-results-summary">EDA Results Summary</h2>
+<h2 id="eda-results-summary">2.3 EDA Results Summary</h2>
 <p>The following section summarizes the EDA results that are relevant to the model development effort. Through the EDA of the bus data the following information was noted about the data set:</p>
 <ul>
 <li><p>The data set only includes weekday trips and the data is fairly evenly distributed.</p></li>
@@ -441,7 +436,7 @@ The following section summarizes the EDA results that are relevant to the model 
 * Max (0.90).
 * PM (0.85).</p>
 <h1 id="chapter-3.-feature-engineering-and-data-preprocessing">Chapter 3. Feature Engineering and Data Preprocessing</h1>
-<h2 id="feature-engineering">Feature Engineering</h2>
+<h2 id="feature-engineering">3.1 Feature Engineering</h2>
 <p>Feature engineering is a process to select features that can improve the performance of prediction model from raw data based on domain knowledge. Removing features that are not relevant to the predictions or contribute specifically to the predictions will make your model’s work easier and faster to learn.</p>
 <p>Similar steps are taken in this section as were taken in the EDA process. However, the overall goal here was to clean the data in such a way that it produces informative, predictive models with minimal bias and over- or under-fitting. Therefore:</p>
 <ul>
@@ -450,13 +445,12 @@ The following section summarizes the EDA results that are relevant to the model 
 <li>The start and end times are converted such that they reflect times and the difference between the start and end time is stored in the data sets as a <strong>‘duration’</strong>.</li>
 </ul>
 <p>The following paragraphs describe the particular ways the training data was cleaned to result in meaningful predictive models. The 2 main ways feature engineering will be conducted on this data set are: 1) The developers knowledge on the dataset (as presented in the EDA), and 2) assessing the statistics on the dataset.</p>
-<h2 id="data-preprocessing">Data Preprocessing</h2>
+<h2 id="data-preprocessing">3.2 Data Preprocessing</h2>
 <p>Data preprocessing is an indispensable step in machine learning. It is important to preprocess the data which should be prior to model development since the quality of the data can determine the final performance of our model.</p>
 <h3 id="handing-missing-data">Handing Missing Data</h3>
 <p>Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. <strong>Table x</strong> shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing ‘Trip’ values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.</p>
-<p><strong>Table x</strong> Percentage of Missing Value</p>
 <figure>
-<img src="images/missingvalue.png" alt="" />
+<img src="images/missingvalue.png" alt="" /><figcaption><strong>Table x Percentage of Missing Value</strong></figcaption>
 </figure>
 <h3 id="feature-scaling">Feature Scaling</h3>
 <p>Feature scaling is a method used to standardize independent variables or feature ranges of data. Since the value range of some original data is very different, the model will give more weight to the feature with large values in the learning process. However, in fact, the weight of each feature should not be considered in this way. In some machine learning algorithms, the objective function cannot work properly without normalization.</p>
@@ -479,33 +473,35 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>In order to flag problems like overfitting or selection bias, we can do the cross-validation. Cross-validation is a technique in which we train our model using the subset of the data-set and then evaluate using the complementary subset of the data-set. This step is done to minimize the likelihood of creating a model that will over or underfit the data. To do the Cross-validation, we should split a part of original traning data as a validation set. In this case, I split the training set into X_train (80% of the original size of train_data) and X_validation (20% of the original size of train_data).</p>
 <h1 id="chapter-4.-model-development-process">Chapter 4. Model Development Process</h1>
 <p>The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.</p>
-<h3 id="establish-a-baseline-model">Establish a Baseline Model</h3>
+<h2 id="establish-a-baseline-model">4.1 Establish a Baseline Model</h2>
 <p>Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model’s coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.</p>
 <figure>
-<img src="images/SVR%20illustration.png" alt="" /><figcaption>Illustration of support vector regression model</figcaption>
+<img src="images/SVR%20illustration.png" alt="" /><figcaption><strong>Illustration of support vector regression model</strong></figcaption>
 </figure>
 <p>The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.</p>
 <figure>
-<img src="images/SVR%20Results.png" alt="" /><figcaption>Support vector regression model results</figcaption>
+<img src="images/SVR%20Results.png" alt="" /><figcaption><strong>Support vector regression model results</strong></figcaption>
 </figure>
 <p>As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.</p>
-<h3 id="develop-a-more-complex-model">Develop a More Complex Model</h3>
+<h2 id="develop-a-more-complex-model">4.2 Develop a More Complex Model</h2>
 <p>As can be seen, the dense linear model results in better (lower) metrics than the baseline model. However, the improvement in the model performance is not that significant. The next section assesses if a dense non-linear model can produce a better model with lower metrics.</p>
 <h3 id="neural-network-model">Neural Network Model</h3>
-<p>The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the <strong>Figure #</strong>. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.
-<img src="images/Neural%20target%20and%20prediction.png" />
-<strong>Figure #. Comparison between predictions and targets.</strong></p>
-<p>A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in <strong>Figure #</strong>. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix.
-<img src="images/Neural%20network.png" />
-<strong>Figure #. Nenural Network.</strong></p>
+<p>The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the <strong>Figure #</strong>. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.</p>
+<figure>
+<img src="images/Neural%20target%20and%20prediction.png" alt="" /><figcaption><strong>Comparison between predictions and targets.</strong></figcaption>
+</figure>
+<p>A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in <strong>Figure #</strong>. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix.</p>
+<figure>
+<img src="images/Neural%20network.png" alt="" /><figcaption><strong>Nenural Network.</strong></figcaption>
+</figure>
 <p>When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in <strong>Figure #</strong>. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain.</p>
 <figure>
-<img src="images/Weight%20correction.png" alt="" />
+<img src="images/Weight%20correction.png" alt="" /><figcaption><strong>Weight correction.</strong></figcaption>
 </figure>
-<p><strong>Figure #. Weight correction.</strong></p>
-<p>In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in <strong>Figure #</strong>.
-<img src="images/Plot%20in%20overfitting.png" /></p>
-<p><strong>Figure #. Plot in overfitting,optimum, and underfitting.</strong></p>
+<p>In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in <strong>Figure #</strong>.</p>
+<figure>
+<img src="images/Plot%20in%20overfitting.png" alt="" /><figcaption><strong>Plot in overfitting,optimum, and underfitting.</strong></figcaption>
+</figure>
 <p>To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model.</p>
 <p>After the optimization as stochastic gradient descent (SGD), take learning rate as 0.1, the RMSE is 0.268, and the R2 score is 0.965.</p>
 <h3 id="most-predictive-model">Most Predictive Model</h3>
