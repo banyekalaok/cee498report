@@ -21,6 +21,8 @@ Kaggle
 MAPE
 MTD
 NEWFLYER
+overfitting
+perditions
 PerTrip
 pract
 pre
@@ -31,10 +33,13 @@ relu
 Ridershippertrip
 RMSE
 Sched
+SGD
+subfield
 Thererfore
 underfit
+underfitting
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX

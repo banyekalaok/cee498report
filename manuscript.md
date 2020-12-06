@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/3ab1c14873eab306b52d0a091d92e23c1cb89fc1/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/dda10d856b8016fc3d0fcfc284a660bff0988e05/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/3ab1c14873eab306b52d0a091d92e23c1cb89fc1/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/dda10d856b8016fc3d0fcfc284a660bff0988e05/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/3ab1c14873eab306b52d0a091d92e23c1cb89fc1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/dda10d856b8016fc3d0fcfc284a660bff0988e05/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/3ab1c14873eab306b52d0a091d92e23c1cb89fc1/))
+([permalink](https://banyekalaok.github.io/cee498report/v/dda10d856b8016fc3d0fcfc284a660bff0988e05/))
 was automatically generated
-from [banyekalaok/cee498report@3ab1c14](https://github.com/banyekalaok/cee498report/tree/3ab1c14873eab306b52d0a091d92e23c1cb89fc1)
+from [banyekalaok/cee498report@dda10d8](https://github.com/banyekalaok/cee498report/tree/dda10d856b8016fc3d0fcfc284a660bff0988e05)
 on December 6, 2020.
 </em></small>
 
@@ -296,6 +296,20 @@ As expected, the baseline model had a high root mean square error (RMSE) and mea
 ### Develop a More Complex Model
 
 As can be seen, the dense linear model results in better (lower) metrics than the baseline model. However, the improvement in the model performance is not that significant. The next section assesses if a dense non-linear model can produce a better model with lower metrics.
+
+### Neural Network Model
+
+The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the Figure x The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.
+Figure X Comparison between predictions and targets
+A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in Figure 2. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
+Figure X Neural Network
+When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in Figure 3. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
+Figure X Weight correction
+In the neural network model, find an optimum way to weight correction is crucial. 
+If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in Figure 4.
+Figure X Plot in overfitting, optimum, and underfitting 
+To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model. 
+After the optimization as stochastic gradient descent (SGD), take learning rate as 0.1, the RMSE is 0.268, and the R2 score is 0.965. 
 
 ### Most Predictive Model
 
