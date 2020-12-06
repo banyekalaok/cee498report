@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/e416203527c5927b5e72387b7603d829a34c9685">banyekalaok/cee498report@e416203</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/0068b7790b5170a69d43f68f6d782f559aba11e4">banyekalaok/cee498report@0068b77</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -82,11 +82,9 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
 <p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.</p>
-<div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
+<img src="images/Figure1.png" alt="" /><figcaption><strong>CUMTD Route Map</strong></figcaption>
 </figure>
-</div>
 <p>=======
 ## 1.1 Background
 Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
@@ -337,7 +335,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <li><strong>Model Development</strong> - This section describes the step-by-step methodology used to determine the best model to predict the load averages.</li>
 <li><strong>Conclusions</strong> - This section briefly highlights the key takeaways from the model development efforts and the report in general.</li>
 </ol>
-<h1 id="chapter-2.-explaratory-data-analysis">Chapter 2. Explaratory Data Analysis</h1>
+<h1 id="chapter-2.-exploratory-data-analysis">Chapter 2. Exploratory Data Analysis</h1>
 <p>The content in chapter 2 is broken down into the following 3 sections:</p>
 <ol type="1">
 <li><p><strong>Data Tidying</strong> - This section discusses how the raw bus data was cleaned and prepared for the EDA analysis. The section also details the independent and dependent variables used in the analysis.</p></li>
@@ -346,9 +344,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 </ol>
 <h2 id="data-tidying">Data Tidying</h2>
 <h3 id="independent-variables">Independent Variables</h3>
-<p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target ‘Load avg’, which gives us an idea which features might be the most predictive.</p>
-<h3 id="correlation-heat-map">correlation heat map</h3>
-<p>The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
+<p>The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form.
+The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.</p>
 <p><strong>Figure 1. Trip distribution per weekday</strong></p>
 <p>Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.</p>
@@ -358,6 +355,12 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>One of the unique challenges faced in this data was what to do with the time data (schedule start and end times). Firstly, the data was provided as strings, therefore, they needed to be converted to datetime format. Secondly, some of the data entries that were not on the conventional 24-hr time format, i.e., sometimes were between 24:00 and 26:00 hours. This is likely because the timestamps represent the bus driver workshifts. Workshifts are easier to monitor and track on a continous scale from clock-in to clock-out than to break-up because of the start of a new day. A function was created to correct the time to be in the 24-hr format then the times were used to determine the duration of a trip (schedule end time - schedule start time).</p>
 <h2 id="investigating-data-inisghts">Investigating Data Inisghts</h2>
 <p><strong><em>Show meaningful plots and correlations. A few examples are provided below</em></strong></p>
+<p>First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target ‘Load avg’, which gives us an idea which features might be the most predictive.</p>
+<div id="fig:image2" class="fignos">
+<figure>
+<img src="images/eda6.png" alt="" /><figcaption><span>Figure 1:</span> correlation heat map</figcaption>
+</figure>
+</div>
 <p>As can be seen in figure 8, each day has a very similar distribution, however, Monday and Thursday have some outliers beyond the maximum. This gives some insight and confirms that the number of trips per day are fairly evenly distributed.</p>
 <p><strong>Figure 8. Box plot of duration per day full dataset.</strong></p>
 <p>Figure 14 informs that the a $ trip &lt; 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.</p>
