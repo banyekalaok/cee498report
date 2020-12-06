@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/5d06ccc8ad04b6f86aea336749e36464227cec8c/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/5d06ccc8ad04b6f86aea336749e36464227cec8c">banyekalaok/cee498report@5d06ccc</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/09168846bc73280d19c8815b077ac059ce888939">banyekalaok/cee498report@0916884</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -381,13 +381,9 @@ The following section summarizes the EDA results that are relevant to the model 
 * Total in (0.78) and total out (0.78).
 * Max (0.90).
 * PM (0.85).</p>
-<h1 id="chapter-3.-data-preprocessing">Chapter 3. Data Preprocessing</h1>
-<p>The content in chapter 3 is broken down into the following 2 sections:</p>
-<ol type="1">
-<li><strong>Data Setup and Feature Engineering</strong> - This section details the pre-processing that took place prior to model development.</li>
-<li><strong>Model Development</strong> - This section describes the step-by-step methodology used to determine the best model to predict the load averages.</li>
-</ol>
-<h2 id="data-setup-and-feature-engineering">Data Setup and Feature Engineering</h2>
+<h1 id="chapter-3.-feature-engineering-and-data-preprocessing">Chapter 3. Feature Engineering and Data Preprocessing</h1>
+<h2 id="feature-engineering">Feature Engineering</h2>
+<p>Feature engineering is a process to select features that can improve the performance of prediction model from raw data based on domain knowledge. Removing features that are not relevant to the predictions or contribute specifically to the predictions will make your model’s work easier and faster to learn.</p>
 <p>Similar steps are taken in this section as were taken in the EDA process. However, the overall goal here was to clean the data in such a way that it produces informative, predictive models with minimal bias and over- or under-fitting. Therefore:</p>
 <ul>
 <li>The data field was converted a day of the week.</li>
@@ -405,7 +401,13 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><strong>No (train)/index (test)</strong>, <strong>Trip</strong>,<strong>Block</strong>, <strong>Course</strong>, <strong>Pattern</strong>, and <strong>Vehicle</strong>.</li>
 <li><strong>Date</strong>, <strong>Sched. start</strong>, and <strong>Sched. end</strong> - They were used to determine the schedules, day and duration. From here on, they no longer have model development value.</li>
 </ul>
+<h2 id="data-preprocessing">Data Preprocessing</h2>
+<p>Data preprocessing is an indispensable step in machine learning. It is important to preprocess the data which should be prior to model development since the quality of the data can determine the final performance of our model.</p>
+<h3 id="handing-missing-data">Handing Missing Data</h3>
+<p>Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. <strong>Table x</strong> shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing ‘Trip’ values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.</p>
 <h3 id="feature-scaling">Feature Scaling</h3>
+<p>Feature scaling is a method used to standardize independent variables or feature ranges of data. Since the value range of some original data is very different, the model will give more weight to the feature with large values in the learning process. However, in fact, the weight of each feature should not be considered in this way. In some machine learning algorithms, the objective function cannot work properly without normalization.</p>
+<h4 id="rescaling-min-max-normalization">Rescaling (min-max normalization)</h4>
 <p>The purpose of feature scaling is to transform the data into common scales.</p>
 <p>Before scaling the data, lets view some data statistics to refresh our memory on what was learned in the EDA. The key takeaway from the graphics below are:</p>
 <ul>
@@ -415,8 +417,9 @@ The following section summarizes the EDA results that are relevant to the model 
 <p><strong>Figure #. Comparison of key predictive variables against load average.</strong></p>
 <p><strong>Figure #. Correlation matrix of key predictive variables.</strong></p>
 <p>From the statistics above, notice that the minimum load (<strong>Min</strong>) has a very low correlation with the load average, therefore, min has low predictive value. Also, notice that <strong>total in</strong> and <strong>total out</strong> are strongly correlated, implying that the sum of boardings during a trip is almost always the same as the sum of alightings. Therefore, only 1 of these 2 features are needed. The <strong>total out</strong> will not be considered in the model development effort.</p>
-<h4 id="scaling-numerical-features">Scaling Numerical Features</h4>
 <p>Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1).</p>
+<h4 id="standardization-z-score-normalization">Standardization (Z-score Normalization)</h4>
+<p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
 <h4 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h4>
 <p>To allow the model to learn from the categorical features, they need to be converted to numerical features. The following section details how the conversions were conducted.</p>
 <ul>
