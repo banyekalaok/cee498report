@@ -4,7 +4,6 @@ boardings
 Champaign
 consdieration
 continous
-correciton
 COVID
 csv
 CUMTD
@@ -29,7 +28,6 @@ PerTrip
 pract
 pre
 predicator
-predition
 Preprocessing
 Reliablity
 relu
@@ -44,5 +42,5 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX
