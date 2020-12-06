@@ -8,11 +8,13 @@ COVID
 csv
 CUMTD
 dataframe
-Dataset
+dataset
 datasets
 datetime
 EDA
-explaratory
+Explaratory
+GradientBoostingRegressor
+GridsearchCV
 heatmap
 hyperparameter
 hyperparameters
@@ -32,6 +34,7 @@ pre
 predicator
 preprocess
 Preprocessing
+Regressor
 Reliablity
 relu
 Rescaling

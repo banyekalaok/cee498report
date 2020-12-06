@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c1b3130c0f6e5e0809ea1f4f385f2747b57de8da/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/981cf436902965ea8471fd90a43999d2bc914914/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c1b3130c0f6e5e0809ea1f4f385f2747b57de8da/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/981cf436902965ea8471fd90a43999d2bc914914/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c1b3130c0f6e5e0809ea1f4f385f2747b57de8da/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/981cf436902965ea8471fd90a43999d2bc914914/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/c1b3130c0f6e5e0809ea1f4f385f2747b57de8da/))
+([permalink](https://banyekalaok.github.io/cee498report/v/981cf436902965ea8471fd90a43999d2bc914914/))
 was automatically generated
-from [banyekalaok/cee498report@c1b3130](https://github.com/banyekalaok/cee498report/tree/c1b3130c0f6e5e0809ea1f4f385f2747b57de8da)
+from [banyekalaok/cee498report@981cf43](https://github.com/banyekalaok/cee498report/tree/981cf436902965ea8471fd90a43999d2bc914914)
 on December 6, 2020.
 </em></small>
 
@@ -353,7 +353,7 @@ After the optimization as stochastic gradient descent (SGD), take learning rate 
 
 **My model was best with relu layers and dropout regularization only. Would probably be even better if it had automatic hyperparameter and parameter selection!(kundayi)**
 
-Our best mode is a type of neural network model developed by Yujing using the sklearn package.
+Our best mode is a type of neural network model developed by Yujing using the sklearn package. The name of model is **Gradient Boosting Regressor**.
 
 *	The basic idea of Boosting is to combine several weak learners into a stronger one.
 
@@ -361,10 +361,32 @@ Our best mode is a type of neural network model developed by Yujing using the sk
 
 *	Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. 
 
+The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the **grid search** method.
+*	max_depth: [3, 10]
+*	learning_rate: [0.1, 0.03]
+* n_estimators: [100, 250, 500]
+
+Sometimes we can improve models' performance by tuning the hyperparameters. Using grid search an operation technique called can help us finding the optimal combination of hyperparameter values. Grid search is a brute-force exhaustive search paradigm.
+
+After combing the GradientBoostingRegressor and GridsearchCV, the **root mean squared error** is **0.165**, and the **R2 score** is 0.985
+
+The following figure shows the predictions against targets. The straight line represents the function y=x. 
+
+* If a point falls on this line, then for this input we can know prediction = target.
+
+* If a point falls over this line, then for this input we can know prediction > target.
+
+* If a point falls below this line, then for this input we can know prediction < target.
+
+* The farther the point is from the line, the less accurate the prediction.
+
+**Figure x. Predictions VS Targets**
+
+
 
 # Chapter 5. Conclusions
 
-As was shown in chapter 3 the most predictive model was able to predict the load average with ## accuracy. Some factors need to be taken into consdieration about this process:
+As was shown in chapter 4 the most predictive model was able to predict the load average with 0.98 accuracy. Some factors need to be taken into consdieration about this process:
 
 1. A significant amount of pre-processing was used - To make this model more cost- and time-effective the input data needs to be tidy before going into the data. This can be achieved by changing the way the data is stored or creating classes and functions that automatically clean the data.
 2. Reliablity - This model was developed using data from a single month from 2020 (August). Therefore, although the model had high predictive potential with the August data. It is possible that the model is not able to accurately predict load averages for other months were passenger habits may significantly differ (e.g., middle of summer, winter or spring). Thererfore, to truly optimize the model a larger year round data set is recommended. It would probably be best to train the model using at least 1 month of data from the 4 seasons of a year.
