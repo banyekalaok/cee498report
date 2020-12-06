@@ -6,7 +6,7 @@ COVID
 csv
 CUMTD
 Dataframe
-Dataset
+dataset
 datasets
 datetime
 df
@@ -23,7 +23,7 @@ increasement
 Inisghts
 Jupyter
 Kaggle
-Kundayi
+kundayi
 Liu
 longhuang
 MTD
@@ -40,6 +40,7 @@ Regressor
 Reliablity
 relu
 RMSE
+Ruihao
 Sched
 serval
 SGD
@@ -53,7 +54,7 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 Yanhan
 YanhanL
 Yujing
