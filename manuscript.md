@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/))
+([permalink](https://banyekalaok.github.io/cee498report/v/c23cda476443d0cf278070c3e108f12b5a5807d5/))
 was automatically generated
-from [banyekalaok/cee498report@e0389ee](https://github.com/banyekalaok/cee498report/tree/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b)
+from [banyekalaok/cee498report@c23cda4](https://github.com/banyekalaok/cee498report/tree/c23cda476443d0cf278070c3e108f12b5a5807d5)
 on December 6, 2020.
 </em></small>
 
@@ -131,6 +131,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 
 ## 1.2 Dataset Overview
 We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition. Table @tbl:constant-digits shows the first five data in the dataset 'df_ridership' where we are going to analyze. 
+
 'df_ridership' dataset shows the ridership situation and has 30171 data points. Its index includes the line number, trip ID and the date, and it has block ID, course ID, pattern name, scheduled start time, scheduled end time, P-stops, M-stops, vehicle ID, vehicle type name, capacity, full capacity, practical capacity, load factor, practical load factor, total boarding number, total alighting number, average load, minimum load, maximum load, passenger miles, and passenger miles factor. In specific, M-stops means that the number of stops at scheduled stop points, P-stops means that the number of stops at scheduled stop points and of unscheduled stops with passenger interaction.
 
 
@@ -199,9 +200,10 @@ Then, a pairwise scatter plot is used to show the degree of linearity of the rel
 
 ![correlation heat map](images/eda7.png)
 
-As can be seen in figure 8, each day has a very similar distribution, however, Monday and Thursday have some outliers beyond the maximum. This gives some insight and confirms that the number of trips per day are fairly evenly distributed.
+Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing on figure 9.
 
-**Figure 8. Box plot of duration per day full dataset.**
+![Load Avg for all buses in average](images/load_avg_in_all_days(average).png){#fig:square-image}
+
 
 Figure 14 informs that the a $ trip < 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.
 
