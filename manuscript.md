@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/))
+([permalink](https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/))
 was automatically generated
-from [banyekalaok/cee498report@cafdb4e](https://github.com/banyekalaok/cee498report/tree/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8)
+from [banyekalaok/cee498report@5f42a64](https://github.com/banyekalaok/cee498report/tree/5f42a64c6bc5bc224ff46db3fce3a84108ed83be)
 on December 6, 2020.
 </em></small>
 
@@ -153,7 +153,7 @@ Group 7's project objective is to use the bus data to predict the buses load ave
 The report was developed using Manubot to allow for a collaborative effort among the 6 group members. The explaratory data analysis (EDA) and model were developed using Python 3 in a Kaggle Notebook and Jupyter integrated development environment (IDE). The content in the following report is broken down into the following 4 main chapters:
 
 1. **Introduction** - The current chapter which introduces the project scope and objective.
-2. **Explaratory Data Analysis** - This chapter details the EDA process, findings and key takeaways.
+2. **Exploratory Data Analysis** - This chapter details the EDA process, findings and key takeaways.
 3. **Model Development** - This section describes the step-by-step methodology used to determine the best model to predict the load averages.
 4. **Conclusions** - This section briefly highlights the key takeaways from the model development efforts and the report in general.
 
@@ -180,18 +180,12 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.
 
-Of the 48 bus lines figure 3 shows that the first 11 lines below (indicated by the boolean output "True") conducted more than 1,050 trips in August. 1,050 trips represents an average of 10 trips per workday, which is considered substantive in this analysis.
-
-
-**Figure 3. Bus line distribution**
 
 ### Dependent Variables
 
 One of the unique challenges faced in this data was what to do with the time data (schedule start and end times). Firstly, the data was provided as strings, therefore, they needed to be converted to datetime format. Secondly, some of the data entries that were not on the conventional 24-hr time format, i.e., some times were between 24:00 and 26:00 hours. This is likely because the timestamps represent the bus driver workshifts. Workshifts are easier to monitor and track on a continous scale from clock-in to clock-out than to break-up because of the start of a new day. A function was created to correct the time to be in the 24-hr format then the times were used to determine the duration of a trip (schedule end time - schedule start time).
 
 ## Investigating Data Inisghts
-
-***Show meaningful plots and correlations. A few examples are provided below***
 
 First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target 'Load avg', which gives us an idea which features might be the most predictive and which features we should drop because of a poor correlation with our target. 
 
@@ -279,24 +273,7 @@ Data in the real world always have few missing values. This phenomena may be due
 
 Feature scaling is a method used to standardize independent variables or feature ranges of data. Since the value range of some original data is very different, the model will give more weight to the feature with large values in the learning process. However, in fact, the weight of each feature should not be considered in this way. In some machine learning algorithms, the objective function cannot work properly without normalization.
 
-#### Rescaling (min-max normalization)
-
-The purpose of feature scaling is to transform the data into common scales. 
-
-Before scaling the data, lets view some data statistics to refresh our memory on what was learned in the EDA. The key takeaway from the graphics below are:
-
-* A linear model might project the load avg but it likely won't be the best model.
-* The correlations matrix confirms that the identified predictive features are likely to result in a good model (except for minimum).
-
-
 **Figure #. Comparison of key predictive variables against load average.**
-
- 
-**Figure #. Correlation matrix of key predictive variables.**
-
-From the statistics above, notice that the minimum load (**Min**) has a very low correlation with the load average, therefore, min has low predictive value. Also, notice that **total in** and **total out** are strongly correlated, implying that the sum of boardings during a trip is almost always the same as the sum of alightings. Therefore, only 1 of these 2 features are needed. The **total out** will not be considered in the model development effort.
-
-Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1). 
 
 #### Standardization (Z-score Normalization)
 
@@ -327,8 +304,6 @@ In order to flag problems like overfitting or selection bias, we can do the cros
 # Chapter 4. Model Development Process
 
 The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.
-
-** I recommend we show 3 models. For each we should: discuss parameters and hyperparameters, show RMSE vs epochs (and perhaps 1 other metric [I used MAE]), then show predictions against targets.
 
 ### Establish a Baseline Model
 

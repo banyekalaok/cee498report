@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/5f42a64c6bc5bc224ff46db3fce3a84108ed83be/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/cafdb4ea8145a7bc8daf6835c88c4021b0c173d8">banyekalaok/cee498report@cafdb4e</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/5f42a64c6bc5bc224ff46db3fce3a84108ed83be">banyekalaok/cee498report@5f42a64</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -333,7 +333,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <p>The report was developed using Manubot to allow for a collaborative effort among the 6 group members. The explaratory data analysis (EDA) and model were developed using Python 3 in a Kaggle Notebook and Jupyter integrated development environment (IDE). The content in the following report is broken down into the following 4 main chapters:</p>
 <ol type="1">
 <li><strong>Introduction</strong> - The current chapter which introduces the project scope and objective.</li>
-<li><strong>Explaratory Data Analysis</strong> - This chapter details the EDA process, findings and key takeaways.</li>
+<li><strong>Exploratory Data Analysis</strong> - This chapter details the EDA process, findings and key takeaways.</li>
 <li><strong>Model Development</strong> - This section describes the step-by-step methodology used to determine the best model to predict the load averages.</li>
 <li><strong>Conclusions</strong> - This section briefly highlights the key takeaways from the model development efforts and the report in general.</li>
 </ol>
@@ -352,12 +352,9 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 <img src="images/Load_Avg_duration.png" alt="Duration of Load Avg" /></p>
 <p>Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.</p>
-<p>Of the 48 bus lines figure 3 shows that the first 11 lines below (indicated by the boolean output “True”) conducted more than 1,050 trips in August. 1,050 trips represents an average of 10 trips per workday, which is considered substantive in this analysis.</p>
-<p><strong>Figure 3. Bus line distribution</strong></p>
 <h3 id="dependent-variables">Dependent Variables</h3>
 <p>One of the unique challenges faced in this data was what to do with the time data (schedule start and end times). Firstly, the data was provided as strings, therefore, they needed to be converted to datetime format. Secondly, some of the data entries that were not on the conventional 24-hr time format, i.e., some times were between 24:00 and 26:00 hours. This is likely because the timestamps represent the bus driver workshifts. Workshifts are easier to monitor and track on a continous scale from clock-in to clock-out than to break-up because of the start of a new day. A function was created to correct the time to be in the 24-hr format then the times were used to determine the duration of a trip (schedule end time - schedule start time).</p>
 <h2 id="investigating-data-inisghts">Investigating Data Inisghts</h2>
-<p><strong><em>Show meaningful plots and correlations. A few examples are provided below</em></strong></p>
 <p>First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target ‘Load avg’, which gives us an idea which features might be the most predictive and which features we should drop because of a poor correlation with our target.</p>
 <figure>
 <img src="images/eda6.png" alt="" /><figcaption>correlation heat map</figcaption>
@@ -434,17 +431,7 @@ The following section summarizes the EDA results that are relevant to the model 
 </figure>
 <h3 id="feature-scaling">Feature Scaling</h3>
 <p>Feature scaling is a method used to standardize independent variables or feature ranges of data. Since the value range of some original data is very different, the model will give more weight to the feature with large values in the learning process. However, in fact, the weight of each feature should not be considered in this way. In some machine learning algorithms, the objective function cannot work properly without normalization.</p>
-<h4 id="rescaling-min-max-normalization">Rescaling (min-max normalization)</h4>
-<p>The purpose of feature scaling is to transform the data into common scales.</p>
-<p>Before scaling the data, lets view some data statistics to refresh our memory on what was learned in the EDA. The key takeaway from the graphics below are:</p>
-<ul>
-<li>A linear model might project the load avg but it likely won’t be the best model.</li>
-<li>The correlations matrix confirms that the identified predictive features are likely to result in a good model (except for minimum).</li>
-</ul>
 <p><strong>Figure #. Comparison of key predictive variables against load average.</strong></p>
-<p><strong>Figure #. Correlation matrix of key predictive variables.</strong></p>
-<p>From the statistics above, notice that the minimum load (<strong>Min</strong>) has a very low correlation with the load average, therefore, min has low predictive value. Also, notice that <strong>total in</strong> and <strong>total out</strong> are strongly correlated, implying that the sum of boardings during a trip is almost always the same as the sum of alightings. Therefore, only 1 of these 2 features are needed. The <strong>total out</strong> will not be considered in the model development effort.</p>
-<p>Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1).</p>
 <h4 id="standardization-z-score-normalization">Standardization (Z-score Normalization)</h4>
 <p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
 <p><strong>Figure x. Z-score Normalization</strong></p>
@@ -463,7 +450,6 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>In order to flag problems like overfitting or selection bias, we can do the cross-validation. Cross-validation is a technique in which we train our model using the subset of the data-set and then evaluate using the complementary subset of the data-set. This step is done to minimize the likelihood of creating a model that will over or underfit the data. To do the Cross-validation, we should split a part of original traning data as a validation set. In this case, I split the training set into X_train (80% of the original size of train_data) and X_validation (20% of the original size of train_data).</p>
 <h1 id="chapter-4.-model-development-process">Chapter 4. Model Development Process</h1>
 <p>The follow sections goes through a step by step process to develop and identify the best model to predict the load average on the test data.</p>
-<p>** I recommend we show 3 models. For each we should: discuss parameters and hyperparameters, show RMSE vs epochs (and perhaps 1 other metric [I used MAE]), then show predictions against targets.</p>
 <h3 id="establish-a-baseline-model">Establish a Baseline Model</h3>
 <p>Before building a trainable model we’ll create a baseline that simply returns the load average.</p>
 <p>As expected, the baseline model had a high root mean square error (RMSE) and mean absolute percentage error (MAPE) on both the training and validation data. The next section assesses if a dense model can produce a better model with lower metrics.</p>

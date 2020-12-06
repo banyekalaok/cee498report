@@ -1,13 +1,11 @@
-alightings
-boardings
 Champaign
 consdieration
 continous
 COVID
 csv
 CUMTD
-dataframe
-Dataset
+Dataframe
+dataset
 datasets
 datetime
 df
@@ -34,11 +32,10 @@ pract
 pre
 predicator
 preprocess
-preprocessing
+Preprocessing
 Regressor
 Reliablity
 relu
-Rescaling
 RMSE
 Sched
 serval
@@ -52,6 +49,6 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX
 Yujing
