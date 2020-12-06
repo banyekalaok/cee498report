@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/0a4e5a2aef7c5c21732670ef17cccca5ab84f4d7/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/0237bbe90ae13b08e34efe156029d27ba71575d3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0a4e5a2aef7c5c21732670ef17cccca5ab84f4d7/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0237bbe90ae13b08e34efe156029d27ba71575d3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0a4e5a2aef7c5c21732670ef17cccca5ab84f4d7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0237bbe90ae13b08e34efe156029d27ba71575d3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/0a4e5a2aef7c5c21732670ef17cccca5ab84f4d7/))
+([permalink](https://banyekalaok.github.io/cee498report/v/0237bbe90ae13b08e34efe156029d27ba71575d3/))
 was automatically generated
-from [banyekalaok/cee498report@0a4e5a2](https://github.com/banyekalaok/cee498report/tree/0a4e5a2aef7c5c21732670ef17cccca5ab84f4d7)
+from [banyekalaok/cee498report@0237bbe](https://github.com/banyekalaok/cee498report/tree/0237bbe90ae13b08e34efe156029d27ba71575d3)
 on December 6, 2020.
 </em></small>
 
@@ -312,8 +312,7 @@ A typical neural network model would have three kinds of layers, which are input
 **Figure #. Nenural Network.**
 
 When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in **Figure #**. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
-https://github.com/banyekalaok/cee498report/blob/master/content/images/Weight%20correction.png
-![Weight correciton](images/Weight correction.png)
+![Weight correciton](content/images/Weight correction.png)
 **Figure #. Weight correction.**
 
 In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in **Figure #**.
