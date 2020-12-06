@@ -29,7 +29,7 @@ pract
 pre
 predicator
 preprocess
-preprocessing
+Preprocessing
 Reliablity
 relu
 Rescaling
@@ -44,5 +44,5 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 XXXX

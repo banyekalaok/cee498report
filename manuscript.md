@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/09168846bc73280d19c8815b077ac059ce888939/))
+([permalink](https://banyekalaok.github.io/cee498report/v/66d546d8aa052fa0afed6a1589f28f1d5dec3405/))
 was automatically generated
-from [banyekalaok/cee498report@0916884](https://github.com/banyekalaok/cee498report/tree/09168846bc73280d19c8815b077ac059ce888939)
+from [banyekalaok/cee498report@66d546d](https://github.com/banyekalaok/cee498report/tree/66d546d8aa052fa0afed6a1589f28f1d5dec3405)
 on December 6, 2020.
 </em></small>
 
@@ -286,6 +286,7 @@ Models learn best and fasted when the data is scaled, most commonly between valu
 
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
+$$x^'=\frac{x-\overline{x}}{\sigma}$$
 
 #### Converting Categorical Features to Numerical
 
