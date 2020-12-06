@@ -7,11 +7,11 @@ continous
 COVID
 csv
 CUMTD
-dataset
+Dataset
 datasets
 datetime
 EDA
-explaratory
+Explaratory
 heatmap
 hyperparameter
 hyperparameters
@@ -36,5 +36,5 @@ underfit
 Urbana
 Veh
 wil
-workshifts
+Workshifts
 XXXX

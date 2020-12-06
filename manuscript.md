@@ -58,11 +58,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -94,9 +94,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/e416203527c5927b5e72387b7603d829a34c9685/))
+([permalink](https://banyekalaok.github.io/cee498report/v/0068b7790b5170a69d43f68f6d782f559aba11e4/))
 was automatically generated
-from [banyekalaok/cee498report@e416203](https://github.com/banyekalaok/cee498report/tree/e416203527c5927b5e72387b7603d829a34c9685)
+from [banyekalaok/cee498report@0068b77](https://github.com/banyekalaok/cee498report/tree/0068b7790b5170a69d43f68f6d782f559aba11e4)
 on December 6, 2020.
 </em></small>
 
@@ -123,7 +123,7 @@ As part of the course project for the class, project group 7 acquired bus riders
 
 ![
 **CUMTD Route Map**
-](images/Figure1.png "CUMTD Route Map"){#fig:wide-image}
+](images/Figure1.png "CUMTD Route Map")
 
 
 =======
@@ -157,7 +157,7 @@ The report was developed using Manubot to allow for a collaborative effort among
 3. **Model Development** - This section describes the step-by-step methodology used to determine the best model to predict the load averages.
 4. **Conclusions** - This section briefly highlights the key takeaways from the model development efforts and the report in general.
 
-# Chapter 2. Explaratory Data Analysis
+# Chapter 2. Exploratory Data Analysis
 
 The content in chapter 2 is broken down into the following 3 sections:
 
@@ -171,10 +171,7 @@ The content in chapter 2 is broken down into the following 3 sections:
 
 ### Independent Variables
 
-The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target 'Load avg', which gives us an idea which features might be the most predictive. 
-
-### correlation heat map
-
+The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. 
 The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.
 
 **Figure 1. Trip distribution per weekday**
@@ -194,6 +191,10 @@ One of the unique challenges faced in this data was what to do with the time dat
 ## Investigating Data Inisghts
 
 ***Show meaningful plots and correlations. A few examples are provided below***
+
+First, we dropped all the empty columns and columns with categorical values or string values, which can not be used as inputs to train the model. Then a heatmap is used to show the pair-wise correlation between the remaining features and our target 'Load avg', which gives us an idea which features might be the most predictive. 
+
+![correlation heat map](images/eda6.png){#fig:image2}
 
 As can be seen in figure 8, each day has a very similar distribution, however, Monday and Thursday have some outliers beyond the maximum. This gives some insight and confirms that the number of trips per day are fairly evenly distributed.
 
