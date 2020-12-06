@@ -46,9 +46,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/18449d9c9cbe318f9a510c3781191c8524da870f/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/18449d9c9cbe318f9a510c3781191c8524da870f">banyekalaok/cee498report@18449d9</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/e0389ee41dfc1cbfd20ce4c9495da563ca093a8b">banyekalaok/cee498report@e0389ee</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -81,7 +81,7 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 </small></li>
 </ul>
 <h1 id="chapter-1.-introduction">Chapter 1. Introduction</h1>
-<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CU-MTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data.</p>
+<p>As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as <strong>bus data</strong>) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure <a href="#fig:wide-image">1</a> gives an overview of the CUMTD area.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
 <img src="images/Figure1.png" alt="" /><figcaption><span>Figure 1:</span> <strong>CUMTD Route Map</strong></figcaption>
@@ -91,10 +91,11 @@ Department of Civil Engineering, University of Illinois, Champaign-Urbana
 <p>Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
 If we can predict the passenger loads, bus system can be run more efficiently and economically. Therefore, we investigated the ridership of the CUMTD bus system to attempt to find the optimal way to predict load averages (avg # of passengers onboard during a trip).</p>
 <h2 id="dataset-overview">1.2 Dataset Overview</h2>
-<p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition.</p>
+<p>We received 3 datasets containing route performance and bus ridership data from CUMTD. For this project, we focused on the bus ridership per trip weekday data for the month of August. We will find the most appropriate variables for the accuracy of our prediction, and choose the optimal machine learning model for Kaggle competition. Table <a href="#tbl:constant-digits">1</a> shows the first five data in the dataset ‘df_ridership’ where we are going to analyze.
+‘df_ridership’ dataset shows the ridership situation and has 30171 data points. Its index includes the line number, trip ID and the date, and it has block ID, course ID, pattern name, scheduled start time, scheduled end time, P-stops, M-stops, vehicle ID, vehicle type name, capacity, full capacity, practical capacity, load factor, practical load factor, total boarding number, total alighting number, average load, minimum load, maximum load, passenger miles, and passenger miles factor. In specific, M-stops means that the number of stops at scheduled stop points, P-stops means that the number of stops at scheduled stop points and of unscheduled stops with passenger interaction.</p>
 <div id="tbl:constant-digits" class="tablenos">
 <table style="width:100%;">
-<caption><span>Table 1:</span> Ridershippertrip_PerTrip-AugustWeekdays9-9
+<caption><span>Table 1:</span> Ridership Per Trip in August Weekdays
 </caption>
 <colgroup>
 <col style="width: 3%" />
@@ -170,9 +171,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">BLUE[V:0001]</td>
 <td style="text-align: center;">402</td>
 <td style="text-align: center;">1290495</td>
-<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
-<td style="text-align: center;">BLUE</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">124.0.137636458</td>
+<td style="text-align: center;">BLUE 3</td>
 <td style="text-align: center;">6:43:00</td>
 <td style="text-align: center;">7:03:00</td>
 <td style="text-align: center;">0</td>
@@ -194,6 +194,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;"></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">2</td>
@@ -202,9 +203,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">BLUE[V:0001]</td>
 <td style="text-align: center;">402</td>
 <td style="text-align: center;">1290495</td>
-<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
-<td style="text-align: center;">BLUE</td>
-<td style="text-align: center;">51</td>
+<td style="text-align: center;">124.0.137636458</td>
+<td style="text-align: center;">BLUE 51</td>
 <td style="text-align: center;">7:03:00</td>
 <td style="text-align: center;">7:35:00</td>
 <td style="text-align: center;">5</td>
@@ -226,6 +226,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;"></td>
 <td style="text-align: center;">7.02</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">3</td>
@@ -234,9 +235,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">BLUE[V:0001]</td>
 <td style="text-align: center;">402</td>
 <td style="text-align: center;">1290495</td>
-<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
-<td style="text-align: center;">4W</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">124.0.137636458]</td>
+<td style="text-align: center;">4W 3</td>
 <td style="text-align: center;">7:40:00</td>
 <td style="text-align: center;">8:13:00</td>
 <td style="text-align: center;">4</td>
@@ -258,6 +258,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;"></td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">4</td>
@@ -266,9 +267,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">BLUE[V:0001]</td>
 <td style="text-align: center;">402</td>
 <td style="text-align: center;">1290495</td>
-<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
-<td style="text-align: center;">BLUE</td>
-<td style="text-align: center;">51</td>
+<td style="text-align: center;">124.0.137636458]</td>
+<td style="text-align: center;">BLUE 51</td>
 <td style="text-align: center;">8:17:00</td>
 <td style="text-align: center;">8:51:00</td>
 <td style="text-align: center;">8</td>
@@ -290,6 +290,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;"></td>
 <td style="text-align: center;">4.68</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">5</td>
@@ -298,9 +299,8 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;">BLUE[V:0001]</td>
 <td style="text-align: center;">402</td>
 <td style="text-align: center;">1290495</td>
-<td style="text-align: center;"><span class="citation" data-cites="124.0.137636458">[<span class="citeproc-not-found" data-reference-id="124.0.137636458"><strong>???</strong></span>@]</span></td>
-<td style="text-align: center;">4W</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">124.0.137636458</td>
+<td style="text-align: center;">4W 3</td>
 <td style="text-align: center;">8:51:00</td>
 <td style="text-align: center;">9:24:00</td>
 <td style="text-align: center;">7</td>
@@ -322,6 +322,7 @@ If we can predict the passenger loads, bus system can be run more efficiently an
 <td style="text-align: center;"></td>
 <td style="text-align: center;">4.27</td>
 <td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
@@ -364,29 +365,10 @@ The following section summarizes the EDA results that are relevant to the model 
 <figure>
 <img src="images/eda7.png" alt="" /><figcaption>correlation heat map</figcaption>
 </figure>
-<p>Next, we explore the charateristic of load average in different weekday. We collect the data from Monday to Friday, and find out their total load average and their durations. Figures below are the sum of the load average andtheir durations.</p>
-<p><img src="images/Load_Avg_weekdays.png" alt="total of load avg in weekdays" />
-<img src="images/Load_Avg_duration.png" alt="Duration of load avg in weekdays" /></p>
-<p>Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use <a href="http://mtd.org/maps-and-schedules/routes/">Number of Routes’ Names in CUMTD</a> to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below.</p>
-<p><img src="images/load_avg_in_all_days(average).png" id="fig:square-image" alt="Load Avg for all buses in average" />
-(Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses)</p>
-<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days, which shows as below. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together, which shows as below.</p>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="images/load_avg_in_each_day.png" style="height:10in" alt="" /><figcaption><span>Figure 2:</span> Load Avg in each day</figcaption>
-</figure>
-</div>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="images/load_avg_in_each_bus_line.png" style="height:10in" alt="" /><figcaption><span>Figure 3:</span> Load Avg for each bus line</figcaption>
-</figure>
-</div>
-<p>With these comparisons, some takeaways can be summarized as follows:</p>
-<ul>
-<li>There were only a few increasement after semester opened. It shows that the pandemic decreases the students’ willingness of taking buses to face-to-face classes.</li>
-<li>In August, the YELLOW, RED, LAVENDER, GREEN and GREY buses have relatively high passengers.</li>
-<li>The Illini routes changed the most after semester started, we believe one of the reasons is that students who live in One North or One South must take buses to the classroom.</li>
-</ul>
+<p>As can be seen in figure 8, each day has a very similar distribution, however, Monday and Thursday have some outliers beyond the maximum. This gives some insight and confirms that the number of trips per day are fairly evenly distributed.</p>
+<p><strong>Figure 8. Box plot of duration per day full dataset.</strong></p>
+<p>Figure 14 informs that the a $ trip &lt; 12 minutes $ long have no stops. The number of stops then steadily increase with time to a max of 42 at a trip of duration ~ 55 to 65 minutes.</p>
+<p><strong>Figure 14. Bar plot of duration against P-stops filtered dataset.</strong></p>
 <h2 id="eda-results-summary">EDA Results Summary</h2>
 <p>The following section summarizes the EDA results that are relevant to the model development effort. Through the EDA of the bus data the following information was noted about the data set:</p>
 <ul>
@@ -444,17 +426,11 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Models learn best and fasted when the data is scaled, most commonly between values of -1 and 1 or 0 and 1. Since, all the numerical values are greater than 0, the numerical features were scaled using normalization (scaling from 0 to 1).</p>
 <h4 id="standardization-z-score-normalization">Standardization (Z-score Normalization)</h4>
 <p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
-<figure>
-<img src="images/z-score.png" alt="" />
-</figure>
 <p><strong>Figure x. Z-score Normalization</strong></p>
 <h3 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h3>
 <p>To allow the model to learn from the categorical features, they need to be converted to numerical features. The following section details how the conversions were conducted.</p>
 <h3 id="one-hot-coding">One-hot coding</h3>
 <p>Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. <strong>Figure x</strong> is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.</p>
-<figure>
-<img src="images/onehot.png" alt="" />
-</figure>
 <p><strong>Figure x. One-hot Coding Example</strong></p>
 <ul>
 <li>The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.</li>
@@ -497,10 +473,6 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><p>Boosting models try predictors sequentially, and the subsequent model attempts to fix the errors of its predecessor.</p></li>
 <li><p>Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error.</p></li>
 </ul>
-<figure>
-<img src="images/GradientBoosting.png" alt="" />
-</figure>
-<p><strong>Figure x. Gradient Boosting Algorithm</strong></p>
 <p>The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the <strong>grid search</strong> method.
 * max_depth: [3, 10]
 * learning_rate: [0.1, 0.03]
@@ -514,9 +486,6 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><p>If a point falls below this line, then for this input we can know prediction &lt; target.</p></li>
 <li><p>The farther the point is from the line, the less accurate the prediction.</p></li>
 </ul>
-<figure>
-<img src="images/T_P.png" alt="" />
-</figure>
 <p><strong>Figure x. Predictions VS Targets</strong></p>
 <h1 id="chapter-5.-conclusions">Chapter 5. Conclusions</h1>
 <p>As was shown in chapter 4 the most predictive model was able to predict the load average with 0.98 accuracy. Some factors need to be taken into consdieration about this process:</p>
