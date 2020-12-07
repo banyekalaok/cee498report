@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/d286301e94a1ff889b87651aceb2ba4066625c25/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d286301e94a1ff889b87651aceb2ba4066625c25/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d286301e94a1ff889b87651aceb2ba4066625c25/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/))
+([permalink](https://banyekalaok.github.io/cee498report/v/d286301e94a1ff889b87651aceb2ba4066625c25/))
 was automatically generated
-from [banyekalaok/cee498report@d4759e2](https://github.com/banyekalaok/cee498report/tree/d4759e2865d8d2cad63bf58de53105e06aebc3ba)
+from [banyekalaok/cee498report@d286301](https://github.com/banyekalaok/cee498report/tree/d286301e94a1ff889b87651aceb2ba4066625c25)
 on December 7, 2020.
 </em></small>
 
@@ -389,7 +389,7 @@ The follow sections goes through a step by step process to develop and identify 
 Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model's coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.
 
 <p align="center">
-  <img src="SVR illustration.png">
+  <img src="images/SVR illustration.png">
 </p>
 <div align="center">
 
@@ -399,7 +399,7 @@ Before building a complex model a baseline model was created that simply returns
 The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.
 
 <p align="center">
-  <img src="SVR Results.png">
+  <img src="images/SVR Results.png">
 </p>
 <div align="center">
 
@@ -417,7 +417,7 @@ As can be seen, the dense linear model results in better (lower) metrics than th
 The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the **Figure #**. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.
 
 <p align="center">
-  <img src="Neural_target.png">
+  <img src="images/Neural_target.png">
 </p>
 <div align="center">
 
@@ -427,7 +427,7 @@ The neural network model has been taken in our team. As a subfield of machine le
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
 <p align="center">
-  <img src="Neural_network.png">
+  <img src="images/Neural_network.png">
 </p>
 <div align="center">
 
@@ -436,15 +436,23 @@ A typical neural network model would have three kinds of layers, which are input
 
 When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in **Figure #**. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
 
-![
-**Weight correction.**
-](images/Weight_correction.png){#fig:wide-image}
+<p align="center">
+  <img src="images/Weight_correction.png">
+</p>
+<div align="center">
+
+**Weight correction**
+</div>
 
 In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in **Figure #**.
 
-![
-**Plot in overfitting,optimum, and underfitting.**
-](images/Plot_in_overfitting.png){#fig:wide-image}
+<p align="center">
+  <img src="images/Plot_in_overfitting.png">
+</p>
+<div align="center">
+
+**Plot in overfitting,optimum, and underfitting**
+</div>
 
 To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model. 
 
@@ -460,9 +468,13 @@ Our best mode is a type of neural network model developed by Yujing using the sk
 
 *	Gradient boosting is a type of boosting algorithm. It relies on the intuition that the best possible next model, when combined with previous models, minimizes the overall prediction error. 
 
-![
+<p align="center">
+  <img src="images/GradientBoosting.png">
+</p>
+<div align="center">
+
 **Figure x. Gradient Boosting Algorithm**
-](images/GradientBoosting.png){#fig:wide-image}
+</div>
 
 The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the **grid search** method.
 *	max_depth: [3, 10]
@@ -483,10 +495,13 @@ The following figure shows the predictions against targets. The straight line re
 
 * The farther the point is from the line, the less accurate the prediction.
 
-![
-**Figure x. Predictions VS Targets**
-](images/T_P.png){#fig:square-image}
+<p align="center">
+  <img src="images/T_P.png">
+</p>
+<div align="center">
 
+**Figure x. Predictions VS Targets**
+</div>
 
 # Chapter 5. Conclusions
 
