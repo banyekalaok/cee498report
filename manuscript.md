@@ -8,7 +8,7 @@ author-meta:
 - Zhongshu Han
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-06'
+date-meta: '2020-12-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="CEE498 Project7 Bus Ridership Analysis" />
 
-  <meta name="dc.date" content="2020-12-06" />
+  <meta name="dc.date" content="2020-12-07" />
 
-  <meta name="citation_publication_date" content="2020-12-06" />
+  <meta name="citation_publication_date" content="2020-12-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4489e3f34358a9c0b257a792f9b624a141e0c449/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4489e3f34358a9c0b257a792f9b624a141e0c449/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4489e3f34358a9c0b257a792f9b624a141e0c449/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,10 +115,10 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12/))
+([permalink](https://banyekalaok.github.io/cee498report/v/4489e3f34358a9c0b257a792f9b624a141e0c449/))
 was automatically generated
-from [banyekalaok/cee498report@1c7ac6b](https://github.com/banyekalaok/cee498report/tree/1c7ac6b59a9a66c734ec09b91c0790f3d2a21a12)
-on December 6, 2020.
+from [banyekalaok/cee498report@4489e3f](https://github.com/banyekalaok/cee498report/tree/4489e3f34358a9c0b257a792f9b624a141e0c449)
+on December 7, 2020.
 </em></small>
 
 ## Authors
@@ -173,9 +173,7 @@ on December 6, 2020.
 
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure @fig:wide-image gives an overview of the CUMTD area.
 
-![
-**CUMTD Route Map**
-](images/Figure1.png "CUMTD Route Map"){#fig:wide-image}
+![CUMTD Route Map](images/Figure1.png)
 
 ## 1.1 Background
 Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
