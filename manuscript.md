@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/f3b0cb0261efcae0a51321cc98d12a6279a5da92/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/f3b0cb0261efcae0a51321cc98d12a6279a5da92/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/f3b0cb0261efcae0a51321cc98d12a6279a5da92/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/f3b0cb0261efcae0a51321cc98d12a6279a5da92/))
+([permalink](https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/))
 was automatically generated
-from [banyekalaok/cee498report@f3b0cb0](https://github.com/banyekalaok/cee498report/tree/f3b0cb0261efcae0a51321cc98d12a6279a5da92)
+from [banyekalaok/cee498report@4444d6b](https://github.com/banyekalaok/cee498report/tree/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8)
 on December 7, 2020.
 </em></small>
 
