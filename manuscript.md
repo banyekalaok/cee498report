@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/28886d2c355a7c391e5aa3f51235960d3afa23e5/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/28886d2c355a7c391e5aa3f51235960d3afa23e5/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/28886d2c355a7c391e5aa3f51235960d3afa23e5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/28886d2c355a7c391e5aa3f51235960d3afa23e5/))
+([permalink](https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/))
 was automatically generated
-from [banyekalaok/cee498report@28886d2](https://github.com/banyekalaok/cee498report/tree/28886d2c355a7c391e5aa3f51235960d3afa23e5)
+from [banyekalaok/cee498report@16b8bf5](https://github.com/banyekalaok/cee498report/tree/16b8bf5395220903353ec1778b4a372444bd260c)
 on December 7, 2020.
 </em></small>
 
@@ -228,7 +228,10 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 <p align="center">
   <img src="images/Load_Avg_weekdays.png">
 </p>
-[**Load Avg in weekdays**].center
+<div align="center">
+
+**Average Load per Weekday**
+</div>
 
 <p align="center">
   <img src="images/Load_Avg_duration.png">

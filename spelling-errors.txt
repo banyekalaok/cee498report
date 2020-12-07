@@ -6,7 +6,7 @@ COVID
 csv
 CUMTD
 dataframe
-Dataset
+dataset
 datasets
 datetime
 df
@@ -17,7 +17,7 @@ GridsearchCV
 hanzhs
 heatmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Illini
 increasement
 Inisghts
@@ -35,7 +35,7 @@ pract
 pre
 predicator
 preprocess
-Preprocessing
+preprocessing
 Regressor
 Reliablity
 RMSE
