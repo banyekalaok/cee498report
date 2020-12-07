@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/))
+([permalink](https://banyekalaok.github.io/cee498report/v/d4759e2865d8d2cad63bf58de53105e06aebc3ba/))
 was automatically generated
-from [banyekalaok/cee498report@c5f6689](https://github.com/banyekalaok/cee498report/tree/c5f668949459c816c626c418f27952513c881949)
+from [banyekalaok/cee498report@d4759e2](https://github.com/banyekalaok/cee498report/tree/d4759e2865d8d2cad63bf58de53105e06aebc3ba)
 on December 7, 2020.
 </em></small>
 
@@ -329,7 +329,7 @@ Data preprocessing is an indispensable step in machine learning. It is important
 Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. **Table x** shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing 'Trip' values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.
 
 <p align="center">
-  <img src="missingvalue.png">
+  <img src="images/missingvalue.png">
 </p>
 <div align="center">
 
@@ -347,7 +347,7 @@ Feature scaling is a method used to standardize independent variables or feature
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
 <p align="center">
-  <img src="z-score.png">
+  <img src="images/z-score.png">
 </p>
 <div align="center">
 
