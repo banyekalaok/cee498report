@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/))
+([permalink](https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/))
 was automatically generated
-from [banyekalaok/cee498report@4444d6b](https://github.com/banyekalaok/cee498report/tree/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8)
+from [banyekalaok/cee498report@abbcd36](https://github.com/banyekalaok/cee498report/tree/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff)
 on December 7, 2020.
 </em></small>
 
@@ -265,7 +265,15 @@ Also, for CUMTD, different bus lines serve specific groups of people. In this wa
 
 *Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses*
 
-What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together.
+What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together. The following figures are the partial screenshots of the whole plot:
+
+![
+**Load Avg for All Buses per Day**
+](images/loadavg1.png){#fig:square-image}
+
+![
+**Load Avg for Each Route**
+](images/loadavg2.png){#fig:square-image}
 
 With these comparisons, some takeaways can be summarized as follows:
 
@@ -281,7 +289,7 @@ The following section summarizes the EDA results that are relevant to the model 
 * “Line” is the name of the bus line, which is what most riders are familiar with. There are 38 unique bus lines and 11 of them that do more than 10 trips per workday.
 
 * The data has 6 categorical features – with the exception of pattern, the other 6 features will be used in the model development effort.
-* 24 numerical features – the following features wil be used in the model: P-stops, total in and total out (flux?), and PM.
+* 24 numerical features – the following features wil be used in the model: P-stops, total in and total out, and PM.
 * The label is the load avg.
 
 The following features were identified to have strong predictive ability, indicated by a high correlation with the label (correlation in parenthesis):
