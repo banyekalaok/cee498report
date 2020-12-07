@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/))
+([permalink](https://banyekalaok.github.io/cee498report/v/c5f668949459c816c626c418f27952513c881949/))
 was automatically generated
-from [banyekalaok/cee498report@7d5c0a6](https://github.com/banyekalaok/cee498report/tree/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382)
+from [banyekalaok/cee498report@c5f6689](https://github.com/banyekalaok/cee498report/tree/c5f668949459c816c626c418f27952513c881949)
 on December 7, 2020.
 </em></small>
 
@@ -261,7 +261,7 @@ First, we dropped all the empty columns and columns with categorical values or s
 </p>
 <div align="center">
 
-**Correlation Hetmap**
+**Correlation Heatmap**
 </div>
 Then, a pairwise scatter plot is used to show the degree of linearity of the relationship between each feature, which gives us a rough idea as to what kind of model should be used.
 
@@ -277,7 +277,7 @@ Also, for CUMTD, different bus lines serve specific groups of people. In this wa
 
 ![
 **Load Avg for all buses in average**
-](images/load_avg_in_all_days(average).png){#fig:square-image}
+](images/load_avg_in_all_days(average).png)
 
 *Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses*
 
@@ -328,12 +328,13 @@ Data preprocessing is an indispensable step in machine learning. It is important
 
 Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. **Table x** shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing 'Trip' values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.
 
+<p align="center">
+  <img src="missingvalue.png">
+</p>
+<div align="center">
 
-
-![
 **Percentage of Missing Value**
-](images/missingvalue.png){#fig:square-image}
-
+</div>
 
 ### Feature Scaling
 
@@ -345,9 +346,13 @@ Feature scaling is a method used to standardize independent variables or feature
 
 In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.
 
-![
+<p align="center">
+  <img src="z-score.png">
+</p>
+<div align="center">
+
 **Z-score Normalization**
-](images/z-score.png){#fig:square-image}
+</div>
 
 ### Converting Categorical Features to Numerical
 
@@ -359,7 +364,11 @@ Since most machine learning algorithms require numerical input and output variab
 
 ![
 **One-hot Coding Example**
-](images/onehot.png){#fig:square-image}
+](images/onehot.png)
+<div align="center">
+
+**One-hot Coding Example**
+</div>
 
 - The EDA revealed that there are 39 unique lines that conduct a wide range of rides from 2 to 1,300. Since the line is a strong predicator of bus loads (i.e., popular lines will likely have larger loads), the line were converted via one-hot encoding.
 - The EDA revealed that there are 7 unique vehicle types that conduct a wide range of rides from 452 to 9,414 . Since the vehicle type is a strong predicator of bus loads (i.e., larger vehicles can carry larger loads), the vehicle type was also converted via one-hot encoding.
@@ -379,15 +388,23 @@ The follow sections goes through a step by step process to develop and identify 
 
 Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model's coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.
 
-![
+<p align="center">
+  <img src="SVR illustration.png">
+</p>
+<div align="center">
+
 **Illustration of support vector regression model**
-](images/SVR illustration.png){#fig:wide-image}
+</div>
 
 The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.
 
-![
+<p align="center">
+  <img src="SVR Results.png">
+</p>
+<div align="center">
+
 **Support vector regression model results**
-](images/SVR Results.png){#fig:wide-image}
+</div>
 
 As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.
 
@@ -399,15 +416,23 @@ As can be seen, the dense linear model results in better (lower) metrics than th
 
 The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the **Figure #**. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.
 
-![
-**Comparison between predictions and targets.**
-](images/Neural_target.png){#fig:wide-image}
+<p align="center">
+  <img src="Neural_target.png">
+</p>
+<div align="center">
+
+**Comparison between predictions and targets**
+</div>
 
 A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in **Figure #**. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix. 
 
-![
-**Neural Network.**
-](images/Neural_network.png){#fig:wide-image}
+<p align="center">
+  <img src="Neural_network.png">
+</p>
+<div align="center">
+
+**Neural Network**
+</div>
 
 When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in **Figure #**. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain. 
 

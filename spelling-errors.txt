@@ -5,8 +5,8 @@ continous
 COVID
 csv
 CUMTD
-dataframe
-dataset
+Dataframe
+Dataset
 datasets
 datetime
 df
@@ -16,9 +16,8 @@ GradientBoostingRegressor
 GridsearchCV
 hanzhs
 heatmap
-Hetmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Illini
 increasement
 Inisghts
@@ -54,7 +53,7 @@ underfitting
 Urbana
 Veh
 wil
-Workshifts
+workshifts
 Yanhan
 YanhanL
 Yujing
