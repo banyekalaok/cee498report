@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/accafa987fd6adb52aadf7c7eeefe2e7bac3a041/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/accafa987fd6adb52aadf7c7eeefe2e7bac3a041/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/accafa987fd6adb52aadf7c7eeefe2e7bac3a041/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/))
+([permalink](https://banyekalaok.github.io/cee498report/v/accafa987fd6adb52aadf7c7eeefe2e7bac3a041/))
 was automatically generated
-from [banyekalaok/cee498report@abbcd36](https://github.com/banyekalaok/cee498report/tree/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff)
+from [banyekalaok/cee498report@accafa9](https://github.com/banyekalaok/cee498report/tree/accafa987fd6adb52aadf7c7eeefe2e7bac3a041)
 on December 7, 2020.
 </em></small>
 
@@ -215,9 +215,7 @@ The report was developed using Manubot to allow for a collaborative effort among
 The content in chapter 2 is broken down into the following 3 sections:
 
 1. **Data Tidying** - This section discusses how the raw bus data was cleaned and prepared for the EDA analysis. The section also details the independent and dependent variables used in the analysis.
-
 2. **Investigating Data Insights** - This section details the bus data EDA process and outcomes.
-
 3. **EDA Summary and Conclusions** - This section summarizes the key findings and conclusions from the EDA.
 
 ## 2.1 Data Tidying 
@@ -268,11 +266,11 @@ Also, for CUMTD, different bus lines serve specific groups of people. In this wa
 What's more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together. The following figures are the partial screenshots of the whole plot:
 
 ![
-**Load Avg for All Buses per Day**
+**Load Avg for All Buses per Day (Partial)**
 ](images/loadavg1.png){#fig:square-image}
 
 ![
-**Load Avg for Each Route**
+**Load Avg for Each Route (Partial)**
 ](images/loadavg2.png){#fig:square-image}
 
 With these comparisons, some takeaways can be summarized as follows:
