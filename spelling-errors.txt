@@ -5,8 +5,8 @@ continous
 COVID
 csv
 CUMTD
-Dataframe
-Dataset
+dataframe
+dataset
 datasets
 datetime
 df
@@ -15,9 +15,9 @@ explaratory
 GradientBoostingRegressor
 GridsearchCV
 hanzhs
-heatmap
+Heatmap
 hyperparameter
-Hyperparameters
+hyperparameters
 Illini
 increasement
 Inisghts
