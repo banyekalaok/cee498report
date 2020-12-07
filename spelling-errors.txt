@@ -16,8 +16,9 @@ GradientBoostingRegressor
 GridsearchCV
 hanzhs
 heatmap
+Hetmap
 hyperparameter
-hyperparameters
+Hyperparameters
 Illini
 increasement
 Inisghts

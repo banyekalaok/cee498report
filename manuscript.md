@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/16b8bf5395220903353ec1778b4a372444bd260c/))
+([permalink](https://banyekalaok.github.io/cee498report/v/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382/))
 was automatically generated
-from [banyekalaok/cee498report@16b8bf5](https://github.com/banyekalaok/cee498report/tree/16b8bf5395220903353ec1778b4a372444bd260c)
+from [banyekalaok/cee498report@7d5c0a6](https://github.com/banyekalaok/cee498report/tree/7d5c0a60a6ffedf4d866cc60e0efc9cd595c7382)
 on December 7, 2020.
 </em></small>
 
@@ -174,6 +174,10 @@ on December 7, 2020.
 As part of the course project for the class, project group 7 acquired bus ridership per trip weekday data (from here on referred to as **bus data**) for the month of August from the Champaign-Urbana MTD bus organization (CUMTD). To supplement the bus data, CUMTD provided a manual that explains the process and methodology used to track, monitor and acquire the bus data. Figure @fig:wide-image gives an overview of the CUMTD area.
 
 ![CUMTD Route Map](images/Figure1.png)
+<div align="center">
+
+**CUMTD Route Map**
+</div>
 
 ## 1.1 Background
 Bus operations are complex systems as they function at the intersection of transportation infrastructure and planning based on continually evolving user patterns.
@@ -236,7 +240,10 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 <p align="center">
   <img src="images/Load_Avg_duration.png">
 </p>
+<div align="center">
 
+**Average Load Duration**
+</div>
 Notice that Monday, the start of the work week, has the most trips. Since we only have 1 month of data (August), no strong conclusions can be made at this point.
 The following section summarizes the EDA results that are relevant to the model development effort.
 
@@ -252,14 +259,19 @@ First, we dropped all the empty columns and columns with categorical values or s
 <p align="center">
   <img src="images/eda6.png">
 </p>
+<div align="center">
 
+**Correlation Hetmap**
+</div>
 Then, a pairwise scatter plot is used to show the degree of linearity of the relationship between each feature, which gives us a rough idea as to what kind of model should be used.
 
 <p align="center">
   <img src="images/eda7.png">
 </p>
+<div align="center">
 
-[**correlation heat map**] {.center}
+**Pairwise scatter plot**
+</div>
 
 Also, for CUMTD, different bus lines serve specific groups of people. In this way, it is important to find the characteristic of each bus line during August. First, we create different Dataframe for different bus line. Since the bus name is not easy to show in graphs, we use [Number of Routes' Names in CUMTD](http://mtd.org/maps-and-schedules/routes/) to instead. For some bus line which has different types of bus number based on different routes or different service timeline (for example, 1 Yellow serves during weekdays’ morning and afternoon, and 100 Yellow serves during weekdays’ evening and the whole weekends; 5 Green have normal line and express line or hopper line which similar but different routes), we separate all of them into different name and expressions. After that, we pick up their statistic of “Load Average” in average, and combine with comparison, showing as below. (Note: In the left figure, "Ex" stands for express buses, "H" stands for Hopper, "L" stands for late night buses, "M" stands for maintenance buses and "T" stands for training buses)
 
