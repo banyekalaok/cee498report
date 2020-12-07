@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/3c090129079b112e9d33fea9f8d48f226ccd7285/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/cef75ac8bb999dc9ecc9b4b4b2e9ed8a9f5b8e78/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/3c090129079b112e9d33fea9f8d48f226ccd7285/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cef75ac8bb999dc9ecc9b4b4b2e9ed8a9f5b8e78/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/3c090129079b112e9d33fea9f8d48f226ccd7285/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/cef75ac8bb999dc9ecc9b4b4b2e9ed8a9f5b8e78/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/3c090129079b112e9d33fea9f8d48f226ccd7285/))
+([permalink](https://banyekalaok.github.io/cee498report/v/cef75ac8bb999dc9ecc9b4b4b2e9ed8a9f5b8e78/))
 was automatically generated
-from [banyekalaok/cee498report@3c09012](https://github.com/banyekalaok/cee498report/tree/3c090129079b112e9d33fea9f8d48f226ccd7285)
+from [banyekalaok/cee498report@cef75ac](https://github.com/banyekalaok/cee498report/tree/cef75ac8bb999dc9ecc9b4b4b2e9ed8a9f5b8e78)
 on December 7, 2020.
 </em></small>
 
@@ -225,9 +225,13 @@ The content in chapter 2 is broken down into the following 3 sections:
 The CU-MTD bus data was provided as a csv file. Therefore, the easiest way to setup, tidy and initially analyze the data was in tabular form. 
 The bus data was then assessed for meaningful ways it can be subdivided based on identifying independent variables. As shown in figure 1 below, the number of trips are fairly evenly distributed throughout the week.
 
-[![
+<p align="center">
+  <img src="images/Load_Avg_weekdays.png">
+</p>
+
+![
 **Load Avg in weekdays**
-](images/Load_Avg_weekdays.png)]{.center}
+](images/Load_Avg_weekdays.png){.center}
 
 ![
 **Duration of Load Avg**
