@@ -59,9 +59,9 @@
   <meta name="citation_fulltext_html_url" content="https://banyekalaok.github.io/cee498report/" />
   <meta name="citation_pdf_url" content="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://banyekalaok.github.io/cee498report/v/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8/">permalink</a>)
+(<a href="https://banyekalaok.github.io/cee498report/v/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/banyekalaok/cee498report/tree/4444d6bcc3f10ac6093a216eebb83c2e2c04c8e8">banyekalaok/cee498report@4444d6b</a>
+from <a href="https://github.com/banyekalaok/cee498report/tree/abbcd36092e83b73f7a8304bdf56e19b7d34b5ff">banyekalaok/cee498report@abbcd36</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -422,7 +422,17 @@ The following section summarizes the EDA results that are relevant to the model 
 </figure>
 </div>
 <p><em>Note: In the left figure, “Ex” stands for express buses, “H” stands for Hopper, “L” stands for late night buses, “M” stands for maintenance buses and “T” stands for training buses</em></p>
-<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together.</p>
+<p>What’s more, to compare the characteristic of each bus line on each day of August, we separate the load average in each into different serving days. Moreover, to find its own difference of each bus route, especially the difference between summer holidays and the opening week of the new semester, we combine the load average of each line in different days and plot them together. The following figures are the partial screenshots of the whole plot:</p>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="images/loadavg1.png" alt="" /><figcaption><span>Figure 7:</span> <strong>Load Avg for All Buses per Day</strong></figcaption>
+</figure>
+</div>
+<div id="fig:square-image" class="fignos">
+<figure>
+<img src="images/loadavg2.png" alt="" /><figcaption><span>Figure 8:</span> <strong>Load Avg for Each Route</strong></figcaption>
+</figure>
+</div>
 <p>With these comparisons, some takeaways can be summarized as follows:</p>
 <ul>
 <li>There were only a few increasement after semester opened. It shows that the pandemic decreases the students’ willingness of taking buses to face-to-face classes.</li>
@@ -435,7 +445,7 @@ The following section summarizes the EDA results that are relevant to the model 
 <li><p>The data set only includes weekday trips and the data is fairly evenly distributed.</p></li>
 <li><p>“Line” is the name of the bus line, which is what most riders are familiar with. There are 38 unique bus lines and 11 of them that do more than 10 trips per workday.</p></li>
 <li><p>The data has 6 categorical features – with the exception of pattern, the other 6 features will be used in the model development effort.</p></li>
-<li><p>24 numerical features – the following features wil be used in the model: P-stops, total in and total out (flux?), and PM.</p></li>
+<li><p>24 numerical features – the following features wil be used in the model: P-stops, total in and total out, and PM.</p></li>
 <li><p>The label is the load avg.</p></li>
 </ul>
 <p>The following features were identified to have strong predictive ability, indicated by a high correlation with the label (correlation in parenthesis):
@@ -459,7 +469,7 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Data in the real world always have few missing values. This phenomena may be due to many reasons. There are many methods to handing missing values such as ignore the data row with missing value, replacing the missing value with mean or median value. <strong>Table x</strong> shows the top 8 percentage of missing value for each feature. 1.0 means all the values are missing. 0.0 means none of the data is missing. Here, the missing value of ‘Trip’ are filled with the mean of all the existing ‘Trip’ values. From the table we can know the eighth large of the percentage is already 0, which proves that there is no missing data for other features not appearing in the table.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/missingvalue.png" alt="" /><figcaption><span>Figure 7:</span> <strong>Percentage of Missing Value</strong></figcaption>
+<img src="images/missingvalue.png" alt="" /><figcaption><span>Figure 9:</span> <strong>Percentage of Missing Value</strong></figcaption>
 </figure>
 </div>
 <h3 id="feature-scaling">Feature Scaling</h3>
@@ -468,7 +478,7 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>In the standardization, the core idea is to convert each feature in the data so that the mean value of each feature is 0 and the standard deviation is 1. The general method of calculation is to determine the distribution mean and standard deviation for each feature. The formula showing how to transform the values is shown as follow.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/z-score.png" alt="" /><figcaption><span>Figure 8:</span> <strong>Z-score Normalization</strong></figcaption>
+<img src="images/z-score.png" alt="" /><figcaption><span>Figure 10:</span> <strong>Z-score Normalization</strong></figcaption>
 </figure>
 </div>
 <h3 id="converting-categorical-features-to-numerical">Converting Categorical Features to Numerical</h3>
@@ -477,7 +487,7 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Since most machine learning algorithms require numerical input and output variables. We have three categorical data now. We can use the one hot encoding to convert categorical data to integer data. <strong>Figure x</strong> is an example of how a dataframe looks like after one hot encoding. In python, we can use panda’s ‘pd.get_dummies’ function to achieve this. however, we find that the accuracy of model will be less after adding the these three features into our training data. Then we decided to drop all of them.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/onehot.png" alt="" /><figcaption><span>Figure 9:</span> <strong>One-hot Coding Example</strong></figcaption>
+<img src="images/onehot.png" alt="" /><figcaption><span>Figure 11:</span> <strong>One-hot Coding Example</strong></figcaption>
 </figure>
 </div>
 <ul>
@@ -494,13 +504,13 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>Before building a complex model a baseline model was created that simply returns the load average using a fairly straight-forward support vector regression (SVR) model. SVR models are similar to linear regression models except that they minimize the model’s coefficients as opposed to the sum of the squared errors. In addition, SVR provides the flexibility to define an acceptable error level. The model then finds the best fit line to the data points. The figure below illustrates an SVR model.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/SVR%20illustration.png" alt="" /><figcaption><span>Figure 10:</span> <strong>Illustration of Support Vector Regression Model</strong></figcaption>
+<img src="images/SVR%20illustration.png" alt="" /><figcaption><span>Figure 12:</span> <strong>Illustration of Support Vector Regression Model</strong></figcaption>
 </figure>
 </div>
 <p>The SVR developed in this project resulted in an accuracy of 47 percent and a root mean squared error of 2.44 and is shown in the figure below.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/SVR%20Results.png" alt="" /><figcaption><span>Figure 11:</span> <strong>Support Vector Regression Model Results</strong></figcaption>
+<img src="images/SVR%20Results.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Support Vector Regression Model Results</strong></figcaption>
 </figure>
 </div>
 <p>As expected, the baseline model does not fit the data well. The next section assesses if more complex models can produce results and performance.</p>
@@ -510,25 +520,25 @@ The following section summarizes the EDA results that are relevant to the model 
 <p>The neural network model has been taken in our team. As a subfield of machine learning, neural network model would input data, and then train themselves to recognize patterns found in data, finally output a set of similar data. Therefore, choosing neural network would process the data like human brain. In our project, it works very well and precisely, and predicts a correspondingly positive relationship between predictions and targets, shown in the <strong>Figure #</strong>. The targets are validation value, and the perditions are predicted value. As the result shows, predictions and targets are very consistent. The detail coding process would show as follows.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/Neural_target.png" alt="" /><figcaption><span>Figure 12:</span> <strong>Comparison between Predictions and Targets</strong></figcaption>
+<img src="images/Neural_target.png" alt="" /><figcaption><span>Figure 14:</span> <strong>Comparison between Predictions and Targets</strong></figcaption>
 </figure>
 </div>
 <p>A typical neural network model would have three kinds of layers, which are input layer, hidden layer, and output layer, shown in <strong>Figure #</strong>. Among our teams, one of our neural network models contains 4 layers, composed by 1 input layer, 2 hidden layers, and 1 output layer. Both dense in hidden layers are 128, which is shown in Appendix.</p>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="images/Neural_network.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Neural Network</strong></figcaption>
+<img src="images/Neural_network.png" alt="" /><figcaption><span>Figure 15:</span> <strong>Neural Network</strong></figcaption>
 </figure>
 </div>
 <p>When processing the code, in the training part, take learning rate to adjust weight correction. The formula is shown in <strong>Figure #</strong>. In every time, input signal into neural network model, and multiple learning rate, local gradient could correct the model sequentially. After all process done, the model would be optimized as precise as possible, similar to human brain.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/Weight_correction.png" alt="" /><figcaption><span>Figure 14:</span> <strong>Weight Correction</strong></figcaption>
+<img src="images/Weight_correction.png" alt="" /><figcaption><span>Figure 16:</span> <strong>Weight Correction</strong></figcaption>
 </figure>
 </div>
 <p>In the neural network model, find an optimum way to weight correction is crucial. If a network performs well on the training data but very badly on testing set, the network might be over-trained, which is overfitting. On the other hand, if the network works bad on the training data, the network might be under-trained, which is underfitting. Besides, an under-trained network also performs badly on the testing set. A drawing to compare these would be shown in <strong>Figure #</strong>.</p>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/Plot_in_overfitting.png" alt="" /><figcaption><span>Figure 15:</span> <strong>Plot in Overfitting, Optimum, and Underfitting</strong></figcaption>
+<img src="images/Plot_in_overfitting.png" alt="" /><figcaption><span>Figure 17:</span> <strong>Plot in Overfitting, Optimum, and Underfitting</strong></figcaption>
 </figure>
 </div>
 <p>To make the predictions match well in validations, batch mode would be applied in this model. In the batch model, the weight updating is performed when all samples in the epochs are presented to the network. In this model, the epoch is 40, which means there are 40 times to wight the model.</p>
@@ -542,7 +552,7 @@ The following section summarizes the EDA results that are relevant to the model 
 </ul>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/GradientBoosting.png" alt="" /><figcaption><span>Figure 16:</span> <strong>Gradient Boosting Algorithm</strong></figcaption>
+<img src="images/GradientBoosting.png" alt="" /><figcaption><span>Figure 18:</span> <strong>Gradient Boosting Algorithm</strong></figcaption>
 </figure>
 </div>
 <p>The Hyperparameters used in the model are shown as follow. The reason why each parameter has more than one number is that we also use the <strong>grid search</strong> method.
@@ -560,7 +570,7 @@ The following section summarizes the EDA results that are relevant to the model 
 </ul>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="images/T_P.png" alt="" /><figcaption><span>Figure 17:</span> <strong>Predictions VS Targets</strong></figcaption>
+<img src="images/T_P.png" alt="" /><figcaption><span>Figure 19:</span> <strong>Predictions VS Targets</strong></figcaption>
 </figure>
 </div>
 <h1 id="chapter-5.-conclusions">Chapter 5. Conclusions</h1>
