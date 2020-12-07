@@ -79,11 +79,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://banyekalaok.github.io/cee498report/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/eba96654715d374e19a1d7c79d0e283032bb08ef/" />
+  <link rel="alternate" type="text/html" href="https://banyekalaok.github.io/cee498report/v/bf908251a22f213c9743bea26329aad27aff7412/" />
 
-  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/eba96654715d374e19a1d7c79d0e283032bb08ef/" />
+  <meta name="manubot_html_url_versioned" content="https://banyekalaok.github.io/cee498report/v/bf908251a22f213c9743bea26329aad27aff7412/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/eba96654715d374e19a1d7c79d0e283032bb08ef/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://banyekalaok.github.io/cee498report/v/bf908251a22f213c9743bea26329aad27aff7412/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -115,9 +115,9 @@ title: CEE498 Project7 Bus Ridership Analysis
 
 <small><em>
 This manuscript
-([permalink](https://banyekalaok.github.io/cee498report/v/eba96654715d374e19a1d7c79d0e283032bb08ef/))
+([permalink](https://banyekalaok.github.io/cee498report/v/bf908251a22f213c9743bea26329aad27aff7412/))
 was automatically generated
-from [banyekalaok/cee498report@eba9665](https://github.com/banyekalaok/cee498report/tree/eba96654715d374e19a1d7c79d0e283032bb08ef)
+from [banyekalaok/cee498report@bf90825](https://github.com/banyekalaok/cee498report/tree/bf908251a22f213c9743bea26329aad27aff7412)
 on December 7, 2020.
 </em></small>
 
@@ -228,7 +228,7 @@ The bus data was then assessed for meaningful ways it can be subdivided based on
 <p align="center">
   <img src="images/Load_Avg_weekdays.png">
 </p>
-### [Load Avg in weekdays]{.center}
+[**Load Avg in weekdays**]{.center}
 
 ![
 **Duration of Load Avg**
